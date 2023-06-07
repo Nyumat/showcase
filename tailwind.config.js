@@ -1,7 +1,11 @@
-import * as d from 'daisyui';
-export const content = ['./src/**/*.{js,ts,jsx,tsx}'];
-export const plugins = [d];
-export const daisyui = {
-  themes: ["dark"],
-  base: false,
-};
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("daisyui")],
+}
