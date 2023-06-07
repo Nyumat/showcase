@@ -1,22 +1,22 @@
 import React from "react";
 import { Interest } from '../../types';
 
-import i2 from "../../assets/memories/2.png";
-import i4 from "../../assets/memories/4.jpg";
-import i6 from "../../assets/memories/6.jpg";
-import i7 from "../../assets/memories/7.jpg";
-import i8 from "../../assets/memories/8.jpg";
-import i9 from "../../assets/memories/9.jpg";
-import i10 from "../../assets/memories/10.jpg";
-import i11 from "../../assets/memories/11.jpg";
-import i13 from "../../assets/memories/13.jpg";
-import i14 from "../../assets/memories/14.png";
-import i15 from "../../assets/memories/15.jpg";
-import acm from "../../assets/memories/acm.png";
-import barcamp from "../../assets/memories/barcamp.png";
-import goog from "../../assets/memories/goog.png";
-import zon from "../../assets/memories/zon.png";
-import wbacm from "../../assets/memories/wbacm.png";
+const i2 = new URL("../../assets/memories/2.png", import.meta.url).href;
+const i4 = new URL("../../assets/memories/4.jpg", import.meta.url).href;
+const i6 = new URL("../../assets/memories/6.jpg", import.meta.url).href;
+const i7 = new URL("../../assets/memories/7.jpg", import.meta.url).href;
+const i8 = new URL("../../assets/memories/8.jpg", import.meta.url).href;
+const i9 = new URL("../../assets/memories/9.jpg", import.meta.url).href;
+const i10 = new URL("../../assets/memories/10.jpg", import.meta.url).href;
+const i11 = new URL("../../assets/memories/11.jpg", import.meta.url).href;
+const i13 = new URL("../../assets/memories/13.jpg", import.meta.url).href;
+const i14 = new URL("../../assets/memories/14.png", import.meta.url).href;
+const i15 = new URL("../../assets/memories/15.jpg", import.meta.url).href;
+const acm = new URL("../../assets/memories/acm.png", import.meta.url).href;
+const barcamp = new URL("../../assets/memories/barcamp.png", import.meta.url).href;
+const goog = new URL("../../assets/memories/goog.png", import.meta.url).href;
+const zon = new URL("../../assets/memories/zon.png", import.meta.url).href;
+const wbacm = new URL("../../assets/memories/wbacm.png", import.meta.url).href;
 
 
 const memories: Interest[] = [
