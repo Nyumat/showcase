@@ -30,7 +30,7 @@ const Box: React.FC<BoxProps> = ({ num, text, size }): ReactElement => {
 
       return (
             <motion.div
-                  className={`${size ? size : "text-6xl"} font-bold text-center text-white`}
+                  className={`${size ? size : "text-6xl"} font-bold text-center text-white sm:text-4xl md:text-5xl lg:text-6xl`}
                   ref={ref}
                   variants={boxVariant}
                   initial="hidden"

@@ -24,7 +24,7 @@ function TypewriterComponent() {
       }, []);
 
       return (
-            <h1 className="text-2xl sm:text-lg md:text-2xl lg:text-5xl whitespace-nowrap text-center z-50">
+            <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl whitespace-wrap text-center z-50 pb-16 w-full text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                   Hi! I'm Tom Nyuma.
                   <span className="text-accent"> | </span>
                   <span ref={elementRef}></span>

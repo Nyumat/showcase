@@ -4,8 +4,6 @@ import p2 from '../../assets/hero/tongue.png';
 import Typewriter from '../text/TypewriterEffect';
 import '../../index.css'
 
-
-
 const Hero = () => {
       const [currentImageIndex, setCurrentImageIndex] = useState(0);
       const images = [p1, p2,];

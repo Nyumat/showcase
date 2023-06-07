@@ -1,11 +1,11 @@
 import { motion, useScroll } from "framer-motion"
-import React from "react"
+import { FC } from "react"
 
-const Scrollbar: React.FC = () : JSX.Element => {
+const Scrollbar: FC = (): JSX.Element => {
       const { scrollYProgress } = useScroll();
-
+      // add "tranform origin-left" to make the scrollbar grow from the left
       return (
-            <motion.div style={{ scaleX: scrollYProgress }} className="fixed top-0 left-0 w-full h-1 bg-orange-500 z-50" />
+            <motion.div style={{ scaleX: scrollYProgress }} className="fixed top-0 left-0 w-full h-2 bg-orange-500 z-50"></motion.div>
       )
 }
 

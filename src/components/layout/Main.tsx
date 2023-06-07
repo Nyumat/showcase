@@ -1,11 +1,13 @@
+// import LazyLoad from "react-lazyload"
 import { Social } from "../../types"
 import Box from "../animations/Box"
 import Interests from "../content/Interests"
 import Memories from "../content/Memories"
 import Projects from "../content/Projects"
 import Socials from "../content/Socials"
-import Canva from "../three/Canva"
+import Galaxy from "../three/Canva"
 import Body from "./Body"
+
 
 const socials: Social[] = [
       { id: 1, title: "Youtube", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png", link: "https://www.youtube.com/@nyumat" },
@@ -20,53 +22,53 @@ const socials: Social[] = [
 function Main() {
       return (
             <>
+                  {/* <LazyLoad once> */}
+                        <Body>
+                              <Box text="I build things for the web." />
+                        </Body>
 
-                  <Body>
-                        <Box text="I build things for the web." />
-                  </Body>
-
-                  <Body>
-                        <div className="flex flex-col justify-center items-center w-full h-screen opacity-100">
-                              <div className="absolute z-50">
-                                    <Box text="Like these things..." />
+                        <Body>
+                              <div className="flex flex-col justify-center items-center w-full h-screen opacity-100">
+                                    <div className="absolute z-50">
+                                          <Box text="Like these things..." />
+                                    </div>
+                                    <Galaxy />
                               </div>
-                              <Canva />
-                        </div>
-                  </Body>
+                        </Body>
+
+                        <Body>
+                              <div className="mt-32">
+                                    <Box text="I do have favorites..." />
+                                    <Projects />
+                              </div>
+                        </Body>
+
+                        <Body>
+                              <div className="">
+                                    <Box text="Performance is where it all started..." />
+                                    <Interests />
+                              </div>
+                        </Body>
+
+                        <Body>
+                              <div className="my-32">
+                                    <Box text="I will say," />
+                                    <br></br>
+                                    <Box text="The best part about CS is the memories." />
+                                    <Memories />
+                              </div>
+                        </Body>
 
 
-                  <Body>
-                        <div className="mt-32">
-                              <Box text="I do have favorites..." />
-                              <Projects />
-                        </div>
-                  </Body>
-
-                  <Body>
-                        <div className="">
-                              <Box text="Performance is where it all started..." />
-                              <Interests />
-                        </div>
-                  </Body>
-
-                  <Body>
-                        <div className="my-32">
-                              <Box text="I will say," />
-                              <br></br>
-                              <Box text="The best part about CS is the memories." />
-                              <Memories />
-                        </div>
-                  </Body>
-
-
-                  <Body>
-                        <div className="mt-32">
-                              <Box text="Thanks for stopping by!" />
-                              <br></br>
-                              <Box text="Interact with me on my socials!" size="text-2xl" />
-                              <Socials socials={socials} />
-                        </div>
-                  </Body>
+                        <Body>
+                              <div className="mt-32">
+                                    <Box text="Thanks for stopping by!" />
+                                    <br></br>
+                                    <Box text="Interact with me on my socials!" size="text-2xl" />
+                                    <Socials socials={socials} />
+                              </div>
+                        </Body>
+                  {/* </LazyLoad> */}
             </>
 
       )

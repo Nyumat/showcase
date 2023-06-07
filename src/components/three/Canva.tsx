@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Scene } from "./Scene";
 
-const Canva = () => {
+const Galaxy = () => {
       const canvasRef = useRef(null);
       const [isInView, setIsInView] = useState(false);
 
@@ -49,4 +49,4 @@ const Canva = () => {
       );
 };
 
-export default Canva;
+export default Galaxy;

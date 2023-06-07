@@ -9,7 +9,7 @@ import {
 } from "@react-three/postprocessing";
 import { BlendFunction, ChromaticAberrationEffect } from "postprocessing";
 import { useEffect, useRef } from "react";
-import * as THREE from "three";
+import { Color, Matrix4, Object3D, Vector2, Vector3 } from "three";
 
 export interface SceneProps { }
 
@@ -18,8 +18,13 @@ const XY_BOUNDS = 40;
 const Z_BOUNDS = 20;
 const MAX_SPEED_FACTOR = 2;
 const MAX_SCALE_FACTOR = 50;
-
 const CHROMATIC_ABBERATION_OFFSET = 0.007;
+
+// Pre-create reusable objects
+const temp = new Matrix4();
+const tempPos = new Vector3();
+const tempObject = new Object3D();
+const tempColor = new Color();
 
 export const Scene = ({ }: SceneProps) => {
   const meshRef = useRef<THREE.InstancedMesh>();
@@ -27,9 +32,14 @@ export const Scene = ({ }: SceneProps) => {
 
   useEffect(() => {
     if (!meshRef.current) return;
+    if (!effectsRef.current) return;
 
-    const t = new THREE.Object3D();
+    const x = meshRef.current;
+    const y = effectsRef.current;
+
+    const t = new Object3D();
     let j = 0;
+    // Generate and set initial positions for instanced objects
     for (let i = 0; i < COUNT * 3; i += 3) {
       t.position.x = generatePos();
       t.position.y = generatePos();
@@ -37,25 +47,37 @@ export const Scene = ({ }: SceneProps) => {
       t.updateMatrix();
       meshRef.current.setMatrixAt(j++, t.matrix);
     }
+
+    // Mark the instance matrix for update
+    meshRef.current.instanceMatrix.needsUpdate = true;
+
+    // Clean up
+    return () => {
+      if (x) {
+        x.geometry.dispose();
+      }
+      if (y) {
+        y.dispose();
+      }
+      return;
+    }
   }, []);
 
-  const temp = new THREE.Matrix4();
-  const tempPos = new THREE.Vector3();
-  const tempObject = new THREE.Object3D();
-  const tempColor = new THREE.Color();
   useFrame((state, delta) => {
     if (!meshRef.current) return;
 
-    // https://www.wolframalpha.com/input?i=1%2F%28x%5Ex%29
+    // Calculate velocity based on elapsed time
     const velocity =
       1 / Math.pow(state.clock.elapsedTime + 1, state.clock.elapsedTime + 1);
+
+    // Update positions, scales, and colors for each instanced object
     for (let i = 0; i < COUNT; i++) {
       meshRef.current.getMatrixAt(i, temp);
 
-      // update scale
+      // Update scale
       tempObject.scale.set(1, 1, Math.max(1, velocity * MAX_SCALE_FACTOR));
 
-      // update position
+      // Update position
       tempPos.setFromMatrixPosition(temp);
       if (tempPos.z > Z_BOUNDS / 2) {
         tempPos.z = -Z_BOUNDS / 2;
@@ -64,26 +86,25 @@ export const Scene = ({ }: SceneProps) => {
       }
       tempObject.position.set(tempPos.x, tempPos.y, tempPos.z);
 
-      // apply transforms
+      // Apply transforms
       tempObject.updateMatrix();
       meshRef.current.setMatrixAt(i, tempObject.matrix);
 
-      // update and apply color
+      // Update and apply color
       if (tempPos.z > 0) {
         tempColor.r = tempColor.g = tempColor.b = 1;
       } else {
-        tempColor.r =
-          tempColor.g =
-          tempColor.b =
-          1 - tempPos.z / (-Z_BOUNDS / 2);
+        tempColor.r = tempColor.g = tempColor.b = 1 - tempPos.z / (-Z_BOUNDS / 2);
       }
       meshRef.current.setColorAt(i, tempColor);
     }
+
+    // Mark the instance matrix and instance color for update
     meshRef.current.instanceMatrix.needsUpdate = true;
     if (meshRef.current.instanceColor)
       meshRef.current.instanceColor.needsUpdate = true;
 
-    // update post processing uniforms
+    // Update post-processing uniforms
     if (!effectsRef.current) return;
     effectsRef.current.offset.x = Math.max(
       0,
@@ -93,11 +114,16 @@ export const Scene = ({ }: SceneProps) => {
       0,
       Math.pow(0.5, state.clock.elapsedTime) * CHROMATIC_ABBERATION_OFFSET
     );
+    effectsRef.current.modulationOffset = Math.max(
+      0,
+      Math.pow(0.5, state.clock.elapsedTime)
+    );
   });
 
   return (
     <>
-      {/* <color args={["Black"]} attach="background" /> */}
+      <color args={["Black"]} attach="background" />
+      {/* Instanced mesh */}
       <instancedMesh
         ref={meshRef as any}
         args={[undefined, undefined, COUNT]}
@@ -106,25 +132,26 @@ export const Scene = ({ }: SceneProps) => {
         <sphereGeometry args={[0.05]} />
         <meshBasicMaterial color={[1.5, 1.5, 1.5]} toneMapped={false} />
       </instancedMesh>
+
+      {/* Post-processing effects */}
       <EffectComposer>
         <Bloom luminanceThreshold={0.2} mipmapBlur />
         <ChromaticAberration
-          radialModulation={false} //opt
+          radialModulation={false}
           ref={effectsRef as any}
-          blendFunction={BlendFunction.NORMAL} // blend mode
-          offset={
-            new THREE.Vector2(
-              CHROMATIC_ABBERATION_OFFSET,
-              CHROMATIC_ABBERATION_OFFSET
-            )
-          }
-          modulationOffset={1} // opt
+          blendFunction={BlendFunction.NORMAL}
+          offset={new Vector2(
+            CHROMATIC_ABBERATION_OFFSET,
+            CHROMATIC_ABBERATION_OFFSET
+          )}
+          modulationOffset={1}
         />
       </EffectComposer>
     </>
   );
 };
 
+// Helper function to generate random positions within XY_BOUNDS
 function generatePos() {
   return (Math.random() - 0.5) * XY_BOUNDS;
 }
