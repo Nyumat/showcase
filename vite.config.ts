@@ -5,5 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.jpg',  '**/*.JPG', '**/*.PNG',  '**/*.png', '**/*.svg', '**/*.gif', '**/*.mp4', '**/*.webm', '**/*.ogg', '**/*.mp3', '**/*.wav', '**/*.flac', '**/*.aac', '**/*.woff2', '**/*.woff', '**/*.eot', '**/*.ttf', '**/*.otf', '**/*.ico', '**/*.pdf']
-
 })
