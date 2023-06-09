@@ -38,4 +38,3 @@ I had many iterations of this site, but I finally settled on a tech stack that I
 - [ ] Custom Cursor
 - [ ] Performance Optimizations
 - [ ] Multi-page?
-
