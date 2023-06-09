@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ReactElement, useEffect } from "react";
+import ShuffleText from '../text/ShuffleEffect';
 
 const boxVariant = {
       visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -11,9 +12,10 @@ interface BoxProps {
       num?: number;
       text?: string;
       size?: string;
+      shuffle?: boolean;
 }
 
-const Box: React.FC<BoxProps> = ({ num, text, size }): ReactElement => {
+const Box: React.FC<BoxProps> = ({ num, text, size, shuffle }): ReactElement => {
 
       const control = useAnimation();
       const [ref, inView] = useInView();
@@ -28,17 +30,44 @@ const Box: React.FC<BoxProps> = ({ num, text, size }): ReactElement => {
             // }
       }, [control, inView]);
 
+      const render = () => {
+            if (shuffle && text) {
+                  return (
+                        <motion.div
+                              className={`${size ? size : "text-6xl"}font-bold text-center text-white sm:text-4xl md:text-5xl lg:text-6xl`}
+                              ref={ref}
+                              variants={boxVariant}
+                              initial="hidden"
+                              animate={control}
+                        >
+                              <ShuffleText text={text} size="text-6xl" />
+                        </motion.div>
+
+                  )
+            } else {
+                  return (
+
+                        <>
+                              <motion.div
+                                    className={`${size ? size : "text-6xl"} font-bold text-center text-white sm:text-4xl md:text-5xl lg:text-6xl`}
+                                    ref={ref}
+                                    variants={boxVariant}
+                                    initial="hidden"
+                                    animate={control}
+                              >
+                                    {text ? text : num}
+                              </motion.div>
+                        </>
+                  );
+            }
+      };
+
       return (
-            <motion.div
-                  className={`${size ? size : "text-6xl"} font-bold text-center text-white sm:text-4xl md:text-5xl lg:text-6xl`}
-                  ref={ref}
-                  variants={boxVariant}
-                  initial="hidden"
-                  animate={control}
-            >
-                  {text ? text : num}
-            </motion.div>
+            <>
+                  {render()}
+            </>
       );
-};
+
+}
 
 export default Box;
