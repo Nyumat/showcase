@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-empty-pattern */
 /* eslint-disable @typescript-eslint/no-empty-interface */
+
+// TODO: Clear eslint bypassees
+
 import { useFrame } from "@react-three/fiber";
 import {
   Bloom,
@@ -8,14 +11,16 @@ import {
   EffectComposer,
 } from "@react-three/postprocessing";
 import { BlendFunction, ChromaticAberrationEffect } from "postprocessing";
-import { useEffect, useRef } from "react";
-import { Color, Matrix4, Object3D, Vector2, Vector3 } from "three";
+import { useLayoutEffect, useRef } from "react";
+import { Color, Matrix4, Object3D, Vector2, Vector3, InstancedMesh } from "three";
 
-export interface SceneProps { }
+export interface SceneProps {
+  isInView?: boolean | string;
+}
 
-const COUNT = 900;
+const COUNT = 1000;
 const XY_BOUNDS = 40;
-const Z_BOUNDS = 20;
+const Z_BOUNDS = 50;
 const MAX_SPEED_FACTOR = 2;
 const MAX_SCALE_FACTOR = 50;
 const CHROMATIC_ABBERATION_OFFSET = 0.007;
@@ -27,15 +32,12 @@ const tempObject = new Object3D();
 const tempColor = new Color();
 
 export const Scene = ({ }: SceneProps) => {
-  const meshRef = useRef<THREE.InstancedMesh>();
+  const meshRef = useRef<InstancedMesh>();
   const effectsRef = useRef<ChromaticAberrationEffect>();
+  // const { gl } = useThree(); // TODO: Properly dispose of context
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!meshRef.current) return;
-    if (!effectsRef.current) return;
-
-    const x = meshRef.current;
-    const y = effectsRef.current;
 
     const t = new Object3D();
     let j = 0;
@@ -48,19 +50,8 @@ export const Scene = ({ }: SceneProps) => {
       meshRef.current.setMatrixAt(j++, t.matrix);
     }
 
-    // Mark the instance matrix for update
     meshRef.current.instanceMatrix.needsUpdate = true;
 
-    // Clean up
-    return () => {
-      if (x) {
-        x.geometry.dispose();
-      }
-      if (y) {
-        y.dispose();
-      }
-      return;
-    }
   }, []);
 
   useFrame((state, delta) => {
@@ -113,10 +104,6 @@ export const Scene = ({ }: SceneProps) => {
     effectsRef.current.offset.y = Math.max(
       0,
       Math.pow(0.5, state.clock.elapsedTime) * CHROMATIC_ABBERATION_OFFSET
-    );
-    effectsRef.current.modulationOffset = Math.max(
-      0,
-      Math.pow(0.5, state.clock.elapsedTime)
     );
   });
 

@@ -11,7 +11,7 @@ const ProjectCard = ({ projects }: ProjectCardProps): ReactElement => {
       const control = useAnimation();
       const [ref, inView] = useInView();
 
-      const staggerDelay = 0.4;
+      const staggerDelay = 0.30;
 
       useEffect(() => {
             if (inView) {

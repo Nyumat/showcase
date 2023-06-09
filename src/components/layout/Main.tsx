@@ -1,12 +1,15 @@
 // import LazyLoad from "react-lazyload"
+import { useState } from "react"
 import { Social } from "../../types"
 import Box from "../animations/Box"
-import Interests from "../content/Interests"
-import Memories from "../content/Memories"
 import Projects from "../content/Projects"
 import Socials from "../content/Socials"
-import Galaxy from "../three/Canva"
 import Body from "./Body"
+import { AnimatePresence, motion } from "framer-motion"
+import Music from "../content/Music"
+import CompSci from "../content/CompSci"
+import Misc from "../content/Misc"
+import Galaxy from "../three/Galaxy"
 
 
 const socials: Social[] = [
@@ -20,56 +23,92 @@ const socials: Social[] = [
 
 
 function Main() {
+      const [isDone, setIsDone] = useState<boolean>(false)
       return (
-            <>
+            <main>
                   {/* <LazyLoad once> */}
-                        <Body>
-                              <Box text="I build things for the web." />
-                        </Body>
+                  <Body>
+                        <Box text="I build things for the web." />
+                  </Body>
 
-                        <Body>
-                              <div className="flex flex-col justify-center items-center w-full h-screen opacity-100">
-                                    <div className="absolute z-50">
-                                          <Box text="Like these things..." />
-                                    </div>
-                                    <Galaxy />
+                  <Body>
+                        <div className="flex flex-col justify-center items-center w-full h-screen opacity-100">
+                              <div className="absolute z-50">
+                                    <Box text="Like these things..." shuffle={true} />
+                                    {isDone ? (
+                                          <div className="absolute z-50 top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[100%]">
+                                                <AnimatePresence mode="wait">
+                                                      <motion.div
+                                                            // TODO: Maybe add a Y axis translation animation to the arrows
+                                                            initial={{ opacity: 0, scale: 0 }}
+                                                            animate={{ opacity: 1, scale: 1 }}
+                                                            exit={{ opacity: 0, scale: 0.1 }}
+                                                            transition={{ duration: 0.5 }}
+                                                            className="mt-16"
+                                                      >
+                                                            <div className="arrow bounce"></div>
+                                                            <div className="arrow bounce"></div>
+                                                            <div className="arrow bounce"></div>
+                                                      </motion.div>
+                                                </AnimatePresence>
+                                          </div>
+                                    ) : null}
                               </div>
-                        </Body>
+                              <Galaxy props={setIsDone} />
+                        </div>
+                  </Body>
 
-                        <Body>
-                              <div className="mt-32">
-                                    <Box text="I do have favorites..." />
-                                    <Projects />
-                              </div>
-                        </Body>
+                  <Body>
+                        <div className="mt-32">
+                              <Box text="I do have favorites..." />
+                              <br></br>
+                              <Projects />
+                        </div>
+                  </Body>
 
-                        <Body>
-                              <div className="">
-                                    <Box text="Performance is where it all started..." />
-                                    <Interests />
-                              </div>
-                        </Body>
+                  <Body>
+                        <div className="mt-48">
+                              <Box text="When coding gets tough," />
+                              <Music />
+                              <br></br>
+                              <br></br>
 
-                        <Body>
-                              <div className="my-32">
-                                    <Box text="I will say," />
-                                    <br></br>
-                                    <Box text="The best part about CS is the memories." />
-                                    <Memories />
-                              </div>
-                        </Body>
+                              <Box text="I march with the band..." />
+                        </div>
+                  </Body>
+
+                  <Body>
+                        <div className="mt-48">
+                              <Box text="Although I will say," />
+                              <CompSci />
+                              <br></br>
+                              <Box text="This field has brought me many great memories." />
+                        </div>
+                  </Body>
 
 
-                        <Body>
-                              <div className="mt-32">
-                                    <Box text="Thanks for stopping by!" />
-                                    <br></br>
-                                    <Box text="Interact with me on my socials!" size="text-2xl" />
-                                    <Socials socials={socials} />
-                              </div>
-                        </Body>
+                  <Body>
+                        <div className="mt-64">
+                              <Box text="Friends, Places, Experiences..." />
+                              <br></br>
+                              <Misc />
+                              <br></br>
+                              <br></br>
+                              <Box text="I'll never forget." />
+                        </div>
+                  </Body>
+
+
+                  <Body>
+                        <div className="mt-48">
+                              <Box text="Thank you for stopping by!" />
+                              <br></br>
+                              <Box text="I do have a few corners on the internet..." size="text-2xl" />
+                              <Socials socials={socials} />
+                        </div>
+                  </Body>
                   {/* </LazyLoad> */}
-            </>
+            </main>
 
       )
 }

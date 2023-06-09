@@ -8,10 +8,10 @@ function TypewriterComponent() {
       useEffect(() => {
             // eslint-disable-next-line react-hooks/exhaustive-deps
             typewriter = new Typewriter(elementRef.current, {
-                  strings: ['I am a <strong>Web Developer.</strong>', '  <strong>Musician.</strong>', '<strong>Designer.</strong>', '<strong>  Student.</strong>', '<strong>Software Engineer.</strong>'],
+                  strings: ['I am a <strong>Web Developer.</strong>', '<strong>  Student.</strong>', '<strong>Musician.</strong>', '<strong>Friend.</strong>', '<strong>Designer.</strong>', '<strong>Software Engineer.</strong>'],
                   autoStart: true,
                   loop: true,
-                  delay: 40,
+                  delay: 50,
             });
 
             return () => {
