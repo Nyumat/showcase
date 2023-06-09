@@ -11,7 +11,7 @@ const Socials = ({ socials }: SocialsProps): ReactElement => {
       const control = useAnimation();
       const [ref, inView] = useInView();
 
-      const staggerDelay = 0.2;
+      const staggerDelay = 0.5;
 
       useEffect(() => {
             if (inView) {

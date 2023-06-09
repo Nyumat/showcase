@@ -1,13 +1,20 @@
 export type Project = {
-      id: number;
+      id: number | string;
       title: string;
       image: string;
       link?: string;
       github?: string;
 }
 
+export type Image = {
+      id: number | string;
+      title?: string;
+      image: string;
+      link?: string;
+}
+
 export type Interest = {
-      id: number;
+      id: number | string;
       title: string;
       image: string;
       link?: string;
