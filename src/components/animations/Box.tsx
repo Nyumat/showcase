@@ -28,6 +28,10 @@ const Box: React.FC<BoxProps> = ({ num, text, size, shuffle }): ReactElement => 
             // } else {
             //       control.start("hidden");
             // }
+
+            return () => {
+                  control.stop();
+            }
       }, [control, inView]);
 
       const render = () => {
