@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
 import anime from 'animejs/lib/anime.es.js';
 import { motion, useAnimation } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const randomChar = () => {
@@ -39,6 +39,10 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text, size }): React.ReactEle
             if (inView) {
                   control.start("visible");
             }
+
+            return () => {
+                  control.stop();
+            }
       }, [control, inView]);
 
       useEffect(() => {
@@ -70,6 +74,10 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text, size }): React.ReactEle
                         },
                   });
 
+                  if (el.classList.contains('completed')) {
+                        el.classList.remove('completed');
+                  }
+                  
                   a.play();
             };
 
@@ -81,6 +89,8 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text, size }): React.ReactEle
                   clearInterval(interval);
                   if (el) {
                         el.classList.remove('completed');
+                  } else {
+                        return;
                   }
             };
       }, []);
