@@ -1,20 +1,20 @@
-import { Project, Image } from '../types';
 import { v4 as uuidv4 } from 'uuid';
+import { Image, Project } from '../types';
 
 
 export const projects: Project[] = [
-  { id: uuidv4(), title: "ISpyAI", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/ispy_rykpja_dtjayr.webp', link: "https://ispyai.onrender.com", github: "https://github.com/nyumat/ispyai" },
-  { id: uuidv4(), title: "NyumatFlix", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatflix_k6gko8_niyilq.webp', link: "https://nyumatflix.herokuapp.com", github: "https://github.com/nyumat/nyumatflix" },
-  { id: uuidv4(), title: "TalkToBeavs", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/landing_fxcsoq_bwmvok.webp', link: "https://talktobeavs.onrender.com", github: "https://github.com/nyumat/talktobeavs" },
-  { id: uuidv4(), title: "TrackMe@Dixon", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/tmad_xhlx7r_gsqc7e.webp', link: "https://trackmedixon.onrender.com", github: "https://github.com/nyumat/progress" },
-  { id: uuidv4(), title: "AI Doctor", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/aidoctor_jydinm_il19d5.webp', link: "https://ai-doctor.onrender.com", github: "https://github.com/Nyumat/TheAIDoctor" },
-  { id: uuidv4(), title: "Nyuamat's Blog", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/blog_mslh5t_i5juwt.webp', link: "https://nyumat.onrender.com", github: "https://github.com/nyumat/blog" },
-  { id: uuidv4(), title: "Typing Test", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatype_cems5a_t9vhn3.webp', link: "https://nyumatype.onrender.com", github: "https://github.com/Nyumat/TheAIDoctor" },
-  { id: uuidv4(), title: "Movie Tinder", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/mmm_zwsfjd_bewwqw.webp', link: "https://moviematchmaker-app.herokuapp.com", github: "https://github.com/MovieMatchMaker/MovieMatchMaker" },
-  { id: uuidv4(), title: "Band Photo Galley", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/doesband_btqagl_glkkpp.webp', link: "https://nyumat-does-band.vercel.app", github: "https://github.com/Nyumat/NyumatDoesBand" },
-  { id: uuidv4(), title: "Pokedex", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/pokedex_epvna3_ftqii4.webp', link: "https://github.com/Nyumat/NyumatPokedex", github: "https://github.com/Nyumat/NyumatPokedex" },
-  { id: uuidv4(), title: "UploadThing", image: "https://res.cloudinary.com/dkosoobf7/image/upload/v1686314824/pf/x/mid_sepcqv.webp", link: "https://github.com/pingdotgg/uploadthing"},
-  { id: uuidv4(), title: "Tarpaulin", image: "https://res.cloudinary.com/dkosoobf7/image/upload/v1686315080/pf/x/mid2_ghscjo.webp",  link: "https://github.com/Nyumat/dreamteamdb"}
+      { id: uuidv4(), title: "ISpyAI", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/ispy_rykpja_dtjayr.webp', link: "https://ispyai.onrender.com", github: "https://github.com/nyumat/ispyai" },
+      { id: uuidv4(), title: "NyumatFlix", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatflix_k6gko8_niyilq.webp', link: "https://nyumatflix.herokuapp.com", github: "https://github.com/nyumat/nyumatflix" },
+      { id: uuidv4(), title: "TalkToBeavs", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/landing_fxcsoq_bwmvok.webp', link: "https://talktobeavs.onrender.com", github: "https://github.com/nyumat/talktobeavs" },
+      { id: uuidv4(), title: "TrackMe@Dixon", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/tmad_xhlx7r_gsqc7e.webp', link: "https://trackmedixon.onrender.com", github: "https://github.com/nyumat/progress" },
+      { id: uuidv4(), title: "AI Doctor", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/aidoctor_jydinm_il19d5.webp', link: "https://ai-doctor.onrender.com", github: "https://github.com/Nyumat/TheAIDoctor" },
+      { id: uuidv4(), title: "Nyuamat's Blog", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/blog_mslh5t_i5juwt.webp', link: "https://nyumat.onrender.com", github: "https://github.com/nyumat/blog" },
+      { id: uuidv4(), title: "Typing Test", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatype_cems5a_t9vhn3.webp', link: "https://nyumatype.onrender.com", github: "https://github.com/Nyumat/TheAIDoctor" },
+      { id: uuidv4(), title: "Movie Tinder", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/mmm_zwsfjd_bewwqw.webp', link: "https://moviematchmaker-app.herokuapp.com", github: "https://github.com/MovieMatchMaker/MovieMatchMaker" },
+      { id: uuidv4(), title: "Band Photo Galley", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/doesband_btqagl_glkkpp.webp', link: "https://nyumat-does-band.vercel.app", github: "https://github.com/Nyumat/NyumatDoesBand" },
+      { id: uuidv4(), title: "Pokedex", image: 'https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/pokedex_epvna3_ftqii4.webp', link: "https://github.com/Nyumat/NyumatPokedex", github: "https://github.com/Nyumat/NyumatPokedex" },
+      { id: uuidv4(), title: "UploadThing", image: "https://res.cloudinary.com/dkosoobf7/image/upload/v1686314824/pf/x/mid_sepcqv.webp", link: "https://uploadthing.com/", github: "https://github.com/pingdotgg/uploadthing" },
+      { id: uuidv4(), title: "Tarpaulin", image: "https://res.cloudinary.com/dkosoobf7/image/upload/v1686315080/pf/x/mid2_ghscjo.webp", link: "https://github.com/osu-cs493-sp23/dreamteamdb", github: "https://github.com/osu-cs493-sp23/dreamteamdb" }
 ];
 
 export const heroImages: Image[] = [

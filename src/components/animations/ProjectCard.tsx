@@ -43,7 +43,7 @@ const ProjectCard = ({ projects }: ProjectCardProps): ReactElement => {
                                           className="relative w-full h-full px-16"
                                     >
 
-                                          <div className="flex flex-col">
+                                          <div className="flex flex-col" onClick={() => window.open(project.link)}>
                                                 <img
                                                       src={project.image}
                                                       alt={project.title}
