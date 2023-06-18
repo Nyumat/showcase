@@ -42,7 +42,7 @@ const Socials = ({ socials }: SocialsProps): ReactElement => {
                                           }}
                                           className="relative w-full h-full px-16 hover:cursor-pointer"
                                     >
-                                          <div className="flex flex-col items-center align-center justify-center p-4">
+                                          <div className="flex flex-col items-center align-center justify-center p-4" onClick={() => window.open(social.link)}>
                                                 <img
                                                       src={social.image}
                                                       alt={social.title}
