@@ -1,3 +1,4 @@
+import GitHubCorners from "@uiw/react-github-corners";
 import { useEffect, useState } from "react";
 import { heroImages } from "../../data";
 import "../../index.css";
@@ -20,6 +21,12 @@ const Hero = () => {
 
   return (
     <div className="relative w-full h-screen">
+      <GitHubCorners
+        position="right"
+        bgColor="rgb(234 88 12)"
+        color="#000"
+        href="https://github.com/Nyumat/showcase"
+      />
       {images.map((image: Image, index: number) => {
         return (
           <div

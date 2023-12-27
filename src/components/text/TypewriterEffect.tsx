@@ -38,7 +38,7 @@ function TypewriterComponent() {
     <div className="mx-16 xs:mx-8 sm:mx-12 md:mx-16 lg:mx-24 xl:mx-32 2xl:mx-48">
       <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl whitespace-wrap text-center z-50 pb-16 w-full text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         Hey, I'm{" "}
-        <span className="text-orange-600 saturate-200">Tom Nyuma!</span>{" "}
+        <span className="text-orange-600 saturate-100">Tom Nyuma!</span>{" "}
         <span className="text-slate-500/50"> | </span>
         <span ref={elementRef}></span>
       </h1>
