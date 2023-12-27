@@ -12,13 +12,20 @@ import {
 } from "@react-three/postprocessing";
 import { BlendFunction, ChromaticAberrationEffect } from "postprocessing";
 import { useLayoutEffect, useRef } from "react";
-import { Color, Matrix4, Object3D, Vector2, Vector3, InstancedMesh } from "three";
+import {
+  Color,
+  InstancedMesh,
+  Matrix4,
+  Object3D,
+  Vector2,
+  Vector3,
+} from "three";
 
 export interface SceneProps {
   isInView?: boolean | string;
 }
 
-const COUNT = 1000;
+const COUNT = 500;
 const XY_BOUNDS = 40;
 const Z_BOUNDS = 50;
 const MAX_SPEED_FACTOR = 2;
@@ -31,10 +38,11 @@ const tempPos = new Vector3();
 const tempObject = new Object3D();
 const tempColor = new Color();
 
-export const Scene = ({ }: SceneProps) => {
+export const Scene = ({}: SceneProps) => {
   const meshRef = useRef<InstancedMesh>();
   const effectsRef = useRef<ChromaticAberrationEffect>();
-  // const { gl } = useThree(); // TODO: Properly dispose of context
+  // ref: https://github.com/pmndrs/react-three-fiber/discussions/1151
+  // const { gl } = useThree(); // TODO: Properly dispose of context and renderer,
 
   useLayoutEffect(() => {
     if (!meshRef.current) return;
@@ -51,7 +59,6 @@ export const Scene = ({ }: SceneProps) => {
     }
 
     meshRef.current.instanceMatrix.needsUpdate = true;
-
   }, []);
 
   useFrame((state, delta) => {
@@ -85,7 +92,10 @@ export const Scene = ({ }: SceneProps) => {
       if (tempPos.z > 0) {
         tempColor.r = tempColor.g = tempColor.b = 1;
       } else {
-        tempColor.r = tempColor.g = tempColor.b = 1 - tempPos.z / (-Z_BOUNDS / 2);
+        tempColor.r =
+          tempColor.g =
+          tempColor.b =
+            1 - tempPos.z / (-Z_BOUNDS / 2);
       }
       meshRef.current.setColorAt(i, tempColor);
     }
@@ -127,10 +137,12 @@ export const Scene = ({ }: SceneProps) => {
           radialModulation={false}
           ref={effectsRef as any}
           blendFunction={BlendFunction.NORMAL}
-          offset={new Vector2(
-            CHROMATIC_ABBERATION_OFFSET,
-            CHROMATIC_ABBERATION_OFFSET
-          )}
+          offset={
+            new Vector2(
+              CHROMATIC_ABBERATION_OFFSET,
+              CHROMATIC_ABBERATION_OFFSET
+            )
+          }
           modulationOffset={1}
         />
       </EffectComposer>
