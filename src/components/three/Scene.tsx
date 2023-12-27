@@ -5,21 +5,9 @@
 // TODO: Clear eslint bypassees
 
 import { useFrame } from "@react-three/fiber";
-import {
-  Bloom,
-  ChromaticAberration,
-  EffectComposer,
-} from "@react-three/postprocessing";
-import { BlendFunction, ChromaticAberrationEffect } from "postprocessing";
+import { ChromaticAberrationEffect } from "postprocessing";
 import { useLayoutEffect, useRef } from "react";
-import {
-  Color,
-  InstancedMesh,
-  Matrix4,
-  Object3D,
-  Vector2,
-  Vector3,
-} from "three";
+import { Color, InstancedMesh, Matrix4, Object3D, Vector3 } from "three";
 
 export interface SceneProps {
   isInView?: boolean | string;
@@ -130,12 +118,13 @@ export const Scene = ({}: SceneProps) => {
         <meshBasicMaterial color={[1.5, 1.5, 1.5]} toneMapped={false} />
       </instancedMesh>
 
-      {/* Post-processing effects */}
-      <EffectComposer>
+      {/* Post-processing effects  (removed temporarily becuas we <3 Typescript*/}
+      {/* Error: https://github.com/microsoft/TypeScript/issues/45149 */}
+      {/* <EffectComposer>
         <Bloom luminanceThreshold={0.2} mipmapBlur />
         <ChromaticAberration
           radialModulation={false}
-          ref={effectsRef as any}
+          ref={effectsRef as MutableRefObject<any>}
           blendFunction={BlendFunction.NORMAL}
           offset={
             new Vector2(
@@ -145,7 +134,7 @@ export const Scene = ({}: SceneProps) => {
           }
           modulationOffset={1}
         />
-      </EffectComposer>
+      </EffectComposer> */}
     </>
   );
 };
