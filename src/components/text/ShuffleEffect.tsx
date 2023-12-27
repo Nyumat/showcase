@@ -77,7 +77,7 @@ const ShuffleText: React.FC<ShuffleTextProps> = ({ text, size }): React.ReactEle
                   if (el.classList.contains('completed')) {
                         el.classList.remove('completed');
                   }
-                  
+
                   a.play();
             };
 

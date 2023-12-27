@@ -1,26 +1,32 @@
 import daisyui from "daisyui";
+// https://daisyui.com/docs/config/
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      animation: {
-        text: "text 4s ease infinite",
-      },
-      keyframes: {
-        text: {
-          "0%, 100%": {
-            "background-size": "200% 200%",
-            'background-position': 'left center',
-          },
-          "50%": {
-            "background-size": "200% 200%",
-            'background-position': 'right center',
-          },
-          
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+        extend: {
+            animation: {
+                text: "text 4s ease infinite",
+            },
+            keyframes: {
+                text: {
+                    "0%, 100%": {
+                        "background-size": "200% 200%",
+                        'background-position': 'left center',
+                    },
+                    "50%": {
+                        "background-size": "200% 200%",
+                        'background-position': 'right center',
+                    },
+
+                },
+            },
         },
-      },
     },
-  },
-  plugins: [daisyui],
+    plugins: [daisyui],
+    daisyui: {
+        themes: ['dark'],
+        styled: false,
+        base: false
+    }
 };
