@@ -4,17 +4,27 @@ import { bandPhotosMisc } from "../../data";
 
 const Music: React.FC = () => {
       return (
-            <>
-                  <div className="carousel rounded-box shadow-xl h-72 my-12 mt-32">
-                        {bandPhotosMisc.map((photo: Image) => {
-                              return (
-                                    <div className="carousel-item" key={photo.id}>
-                                          <img src={photo.image} alt={photo.title} aria-hidden="true" className="object-cover w-full h-full rounded-box" />
-                                    </div>
-                              );
-                        })}
-                  </div >
-            </>
+        <>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mx-16 my-32">
+            {bandPhotosMisc.map((photo: Image) => {
+              return (
+                <div key={photo.id} className="griid gap-4">
+                  <img
+                    src={photo.image}
+                    alt={photo.title}
+                    aria-hidden="true"
+                    className="h-auto min-w-full rounded-lg max-h-96"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </>
       );
 };
 
