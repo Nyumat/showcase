@@ -23,7 +23,7 @@ function Main() {
       {/* <LazyLoad once> */}
       <Body>
         <div className="flex flex-col justify-center items-center w-full mt-64">
-          <Box text="I started my Computer Science journey up in Oregon back in 2020..." />
+          <Box text="I started coding in 2020..." />
           <div className="tranform translate-y-24">
             <div className="arrow bounce " />
             <div className="arrow bounce " />
@@ -60,7 +60,7 @@ function Main() {
             <Box text="Like this." shuffle={true} />
             {isDone ? (
               <div className="absolute z-50 top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[100%]">
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="sync">
                   <motion.div
                     // TODO: Maybe add a Y axis translation animation to the arrows
                     initial={{ opacity: 0, scale: 0 }}
