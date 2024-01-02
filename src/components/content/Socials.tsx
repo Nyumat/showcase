@@ -30,7 +30,7 @@ const Socials = ({ socials }: SocialsProps): ReactElement => {
               transition: { staggerChildren: staggerDelay },
             },
           }}
-          className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8"
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8"
           ref={ref}
         >
           {socials.map((social: Social) => (
