@@ -36,43 +36,19 @@ import { Image, Project, Social } from "../types";
     id: uuidv4(),
     image:
       "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308787/pf/14_fxurzf_sx0vcj.webp",
+    },
+      {
+    id: uuidv4(),
+    title: "UploadThing",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686314824/pf/x/mid_sepcqv.webp",
+    link: "https://uploadthing.com/",
+    github: "https://github.com/pingdotgg/uploadthing",
   },
 
-*/
+    */
 
 export const projects: Project[] = [
-  {
-    id: uuidv4(),
-    title: "ISpyAI",
-    image:
-      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/ispy_rykpja_dtjayr.webp",
-    link: "https://ispyai.onrender.com",
-    github: "https://github.com/nyumat/ispyai",
-  },
-  {
-    id: uuidv4(),
-    title: "NyumatFlix",
-    image:
-      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatflix_k6gko8_niyilq.webp",
-    link: "https://nyumatflix.herokuapp.com",
-    github: "https://github.com/nyumat/nyumatflix",
-  },
-  {
-    id: uuidv4(),
-    title: "TalkToBeavs",
-    image:
-      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/landing_fxcsoq_bwmvok.webp",
-    link: "https://talktobeavs.onrender.com",
-    github: "https://github.com/nyumat/talktobeavs",
-  },
-  {
-    id: uuidv4(),
-    title: "My Blog",
-    image:
-      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/blog_mslh5t_i5juwt.webp",
-    link: "https://nyumat.onrender.com",
-    github: "https://github.com/nyumat/blog",
-  },
   {
     id: uuidv4(),
     title: "BeavsAI",
@@ -80,14 +56,38 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dkosoobf7/image/upload/v1703560104/pf/x/Screen_Shot_2023-12-08_at_11.06.02_PM_d9zj0j.png",
     link: "https://beavsai.onrender.com/",
     github: "https://github.com/OSU-App-Club/beavsAI-frontend",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704205885/videos/beavsai_vj6hyw.mov",
   },
   {
     id: uuidv4(),
-    title: "Nexus",
+    title: "NyumatFlix",
     image:
-      "https://res.cloudinary.com/dkosoobf7/image/upload/v1703559839/pf/x/nexus_hlfvdb.png",
-    link: "https://devpost.com/software/nexus-27zakp",
-    github: "https://github.com/Sankalpsp21/Nexus",
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatflix_k6gko8_niyilq.webp",
+    link: "https://nyumatflix.herokuapp.com",
+    github: "https://github.com/Nyumat/NyumatFlix",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704204945/videos/nyumatflix_k1n0iw.mov",
+  },
+  {
+    id: uuidv4(),
+    title: "TalkToBeavs",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1704206362/pf/Screen_Shot_2024-01-02_at_6.38.57_AM_iijp2p.png",
+    link: "https://talktobeavs.onrender.com",
+    github: "https://github.com/Nyumat/TalkToBeavs",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704205605/videos/talktobeavs_xtpouv.mov",
+  },
+  {
+    id: uuidv4(),
+    title: "OSU's ACM Website",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1696379199/pf/acm_site.png",
+    link: "https://acm.oregonstate.edu/",
+    github: "https://github.com/osu-acm/website",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704216104/videos/acm_njg7ja.mov",
   },
   {
     id: uuidv4(),
@@ -96,6 +96,28 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dkosoobf7/image/upload/v1703559902/pf/x/Screen_Shot_2023-12-23_at_5.33.27_PM_wd94hg.png",
     link: "https://github.com/NextJudge",
     github: "https://github.com/NextJudge/NextJudge",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704207913/videos/nextjudge_simocs.mov",
+  },
+  {
+    id: uuidv4(),
+    title: "Nexus",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1703559839/pf/x/nexus_hlfvdb.png",
+    link: "https://devpost.com/software/nexus-27zakp",
+    github: "https://github.com/Sankalpsp21/Nexus",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704208933/videos/nexus_lauyqy.mov",
+  },
+  {
+    id: uuidv4(),
+    title: "ISpyAI",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/ispy_rykpja_dtjayr.webp",
+    link: "https://ispyai.onrender.com",
+    github: "https://github.com/Nyumat/ispyai",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704204162/videos/ispyai_sssn9i.mp4",
   },
   {
     id: uuidv4(),
@@ -103,7 +125,9 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/dkosoobf7/image/upload/v1703560059/pf/x/Screen_Shot_2023-11-20_at_6.33.21_PM_qk0vsc.png",
     link: "https://devpost.com/software/mockbuddy",
-    github: "https://github.com/nyumat/mockbuddy",
+    github: "https://github.com/Nyumat/Mockbuddy",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704207031/videos/mockbuddy_qj2pm9.mp4",
   },
   {
     id: uuidv4(),
@@ -112,22 +136,19 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/doesband_btqagl_glkkpp.webp",
     link: "https://nyumat-does-band.vercel.app",
     github: "https://github.com/Nyumat/NyumatDoesBand",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704209217/videos/doesband_wdxwbi.mov",
   },
+
   {
     id: uuidv4(),
-    title: "Open Source Diversity",
+    title: "CSS-in-JS PokeDex",
     image:
-      "https://res.cloudinary.com/dkosoobf7/image/upload/v1703562717/pf/x/Screen_Shot_2023-12-25_at_7.51.27_PM_adjhyv.png",
-    link: "https://opensourcediversity.org/",
-    github: "https://github.com/opensourcediversity/opensourcediversity.org",
-  },
-  {
-    id: uuidv4(),
-    title: "UploadThing",
-    image:
-      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686314824/pf/x/mid_sepcqv.webp",
-    link: "https://uploadthing.com/",
-    github: "https://github.com/pingdotgg/uploadthing",
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1704213404/pf/Screen_Shot_2024-01-02_at_8.36.11_AM_qsp8x8.png",
+    link: "https://github.com/Nyumat/NyumatPokedex",
+    github: "https://github.com/Nyumat/NyumatPokedex",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704213601/videos/pokedex_clfse3.mov",
   },
   {
     id: uuidv4(),
@@ -136,6 +157,48 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dkosoobf7/image/upload/v1703562718/pf/x/Screen_Shot_2023-12-25_at_7.17.56_PM_xztq2k.png",
     link: "https://devpost.com/software/syllabot-1dxsil",
     github: "https://github.com/Nyumat/Syllabot",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704206761/videos/syllabot_syifai.mp4",
+  },
+  {
+    id: uuidv4(),
+    title: "Open Source Diversity",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1703562717/pf/x/Screen_Shot_2023-12-25_at_7.51.27_PM_adjhyv.png",
+    link: "https://opensourcediversity.org/",
+    github: "https://github.com/opensourcediversity/opensourcediversity.org",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704209379/videos/opensourcediversity_qm1gpj.mov",
+  },
+  {
+    id: uuidv4(),
+    title: "My Blog",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308788/pf/blog_mslh5t_i5juwt.webp",
+    link: "https://nyumat.onrender.com",
+    github: "https://github.com/Nyumat/blog",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704206009/videos/myblog_dt2xee.mov",
+  },
+  {
+    id: uuidv4(),
+    title: "Typing Speed Test",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatype_cems5a_t9vhn3.webp",
+    link: "https://nyumatype.onrender.com",
+    github: "https://github.com/Nyumat/NyumaType",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704209730/videos/typingtest_p5umle.mov",
+  },
+  {
+    id: uuidv4(),
+    title: "OSU Rec. Center Workout Tracker",
+    image:
+      "https://res.cloudinary.com/dkosoobf7/image/upload/v1704214718/pf/Screen_Shot_2024-01-02_at_8.56.07_AM_periul.png",
+    link: "https://trackmedixon.onrender.com",
+    github: "https://github.com/Nyumat/ProgressAD",
+    demoVideo:
+      "https://res.cloudinary.com/dkosoobf7/video/upload/v1704215062/videos/trackmedixon_vre4qc.mp4",
   },
 ];
 

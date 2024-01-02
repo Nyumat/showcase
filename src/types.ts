@@ -4,6 +4,7 @@ export type Project = {
   image: string;
   link?: string;
   github?: string;
+  demoVideo?: string;
 };
 
 export type Image = {

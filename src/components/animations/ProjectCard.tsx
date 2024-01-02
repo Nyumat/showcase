@@ -1,12 +1,15 @@
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { ReactElement, useEffect } from "react";
+import HoverVideoPlayer from "react-hover-video-player";
 import { useInView } from "react-intersection-observer";
+import { Vortex } from "react-loader-spinner";
 import { Project } from "../../types";
 
 interface ProjectCardProps {
   projects: Project[];
 }
 
+// TODO: Refactor this component to be more reusable or change scope of this component
 const ProjectCard = ({ projects }: ProjectCardProps): ReactElement => {
   const control = useAnimation();
   const [ref, inView] = useInView();
@@ -27,6 +30,7 @@ const ProjectCard = ({ projects }: ProjectCardProps): ReactElement => {
           animate={control}
           variants={{
             visible: {
+              opacity: 1,
               transition: { staggerChildren: staggerDelay },
             },
           }}
@@ -34,39 +38,81 @@ const ProjectCard = ({ projects }: ProjectCardProps): ReactElement => {
           ref={ref}
         >
           {projects.map((project: Project) => (
-            <motion.div
-              key={project.id}
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              className="relative w-full h-full px-16"
-            >
-              <div
-                className="flex flex-col"
-                onClick={() => window.open(project.link)}
+            <>
+              <motion.div
+                key={project.id}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                className="relative w-full h-full"
               >
-                <h2 className="my-4 text-2xl font-bold text-center text-white">
-                  {project.title}
-                </h2>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full rounded-lg transition duration-500 ease-in-out transform hover:scale-110 hover:cursor-pointer border-2 border-slate-600/30"
-                />
-                <i
-                  className="text-xs text-center text-white align-center justify-center mt-4 hover:cursor-pointer hover:text-blue-300 hover:underline"
+                <div
+                  className="flex flex-col justify-center items-center mx-8"
                   onClick={() => window.open(project.link)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Open project"
                 >
-                  {project.link}
-                  <img
-                    src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
-                    className="inline-block w-6 h-6 ml-2 cursor-pointer"
-                    onClick={() => window.open(project.github)}
+                  <h2 className="my-4 text-2xl font-bold text-center text-white">
+                    {project.title}
+                  </h2>
+
+                  <HoverVideoPlayer
+                    sizingMode="overlay"
+                    videoId={project.id}
+                    videoSrc={project.demoVideo}
+                    pausedOverlay={
+                      <motion.img
+                        src={project.image}
+                        alt={project.title}
+                        className="block h-full w-full rounded-lg border-2 border-slate-600/30"
+                      />
+                    }
+                    hoverOverlayClassName="w-full h-full rounded-lg border-2 border-slate-600/30"
+                    loadingOverlay={
+                      <div className="overlay bg-black/70 h-full w-full flex justify-center items-center rounded-lg">
+                        <Vortex
+                          visible
+                          height="120"
+                          width="120"
+                          ariaLabel="vortex-loading"
+                          wrapperClass="vortex-wrapper"
+                          colors={[
+                            "#ffffff",
+                            "#db4405",
+                            "#ffffff",
+                            "#db4405",
+                            "#ffffff",
+                            "#db4405",
+                          ]}
+                        />
+                      </div>
+                    }
+                    videoClassName="w-full h-full rounded-lg border-2 border-slate-600/30"
+                    preload="metadata"
+                    unloadVideoOnPaused
                   />
-                </i>
-              </div>
-            </motion.div>
+                  <i
+                    className="text-xs text-center text-white align-center justify-center mt-4 hover:cursor-pointer hover:text-blue-300 hover:underline"
+                    onClick={() => window.open(project.link)}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="Open project"
+                  >
+                    {project.link}
+                    <img
+                      src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                      className="inline-block w-6 h-6 ml-2 cursor-pointer"
+                      onClick={() => window.open(project.github)}
+                      role="button"
+                      tabIndex={0}
+                      aria-label="Open project"
+                    />
+                  </i>
+                </div>
+              </motion.div>
+            </>
           ))}
         </motion.div>
       </AnimatePresence>
