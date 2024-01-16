@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "NyumatFlix",
     image:
       "https://res.cloudinary.com/dkosoobf7/image/upload/v1686308789/pf/nyumatflix_k6gko8_niyilq.webp",
-    link: "https://nyumatflix.herokuapp.com",
+    link: "https://nyumatflix.com",
     github: "https://github.com/Nyumat/NyumatFlix",
     demoVideo:
       "https://res.cloudinary.com/dkosoobf7/video/upload/v1704204945/videos/nyumatflix_k1n0iw.mov",
