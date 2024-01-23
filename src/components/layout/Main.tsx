@@ -94,13 +94,13 @@ function Main() {
           <Box text="However, I will say..." />
           <CompSci />
 
-          <Box text="The memories are countless 🥹" />
+          <Box text="The memories are countless." />
         </div>
       </Body>
 
       <Body>
         <div className="mt-64 mb-64">
-          <Box text="Although, when coding gets tough..." />
+          <Box text="Although..when coding gets tough..." />
           <Music />
           <Box text="Music is always there to help me through." />
         </div>
