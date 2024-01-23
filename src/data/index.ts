@@ -83,11 +83,11 @@ export const projects: Project[] = [
     id: uuidv4(),
     title: "OSU's ACM Website",
     image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000121730-acm_site.png?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=MbFAqew~6C6a94VIkRKdCZyFJJ2pHTM6MG1p-0Ul7P8~OxEHw5xBJZ~9RUNF4M~38GMQE0Xx8lfY6s8GZJiMJN9uAaSeBrOp1fhEDABPeHhGNe76hrVui6xgMoPTvkTeHMX8pzS~eHB~eFKcM6akzQTflmKgz5g00HBgE98azBXhbGtMK5FpLEfnsupc1uYgtJo0GPVOZK8K25HwmwyeC1pmmNQvyQURMZOXNKuN1ZME6ndx11ipz62n7ZNLuhPgTudQXq7sJwdgsONTF6m6k9ZluTmhXWwLFO8t9DGMEfHkr43lV4ViMTHPhlE17wDNZM6VJDjfQvjmiK8~RM1oMA__https://d3uraa353l50l1.cloudfront.net/image-1706000121730-acm_site.png?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=MbFAqew~6C6a94VIkRKdCZyFJJ2pHTM6MG1p-0Ul7P8~OxEHw5xBJZ~9RUNF4M~38GMQE0Xx8lfY6s8GZJiMJN9uAaSeBrOp1fhEDABPeHhGNe76hrVui6xgMoPTvkTeHMX8pzS~eHB~eFKcM6akzQTflmKgz5g00HBgE98azBXhbGtMK5FpLEfnsupc1uYgtJo0GPVOZK8K25HwmwyeC1pmmNQvyQURMZOXNKuN1ZME6ndx11ipz62n7ZNLuhPgTudQXq7sJwdgsONTF6m6k9ZluTmhXWwLFO8t9DGMEfHkr43lV4ViMTHPhlE17wDNZM6VJDjfQvjmiK8~RM1oMA__",
+      "https://d3uraa353l50l1.cloudfront.net/image-1706001733500-acm_site.png?Expires=1708593749&Key-Pair-Id=K2QFIALPUONXG1&Signature=IsJa-WBYBKY4l61ujWcb8OAoPNxuKhIkKjdst108625Yp00~-c~-cfFZlb9G4dwX57L0iugW1vI58nqD-ZVpGZkc~AbknUwPFP63ZTYHbKq5Ivpkq9xaE1Z4H7d-wJbeojZtGSOTcpT~1geIx72lHXR~iNb~K-aZL052k73xGfNtZPBk4iTmO2Plp-Q-OQl-lgqv~E0Qv4UkSd8TfbOV~TPZXNq0AuJ4y2y-CWfQm2AZRPMYEy54fM25km9Wen4Lapw~svcyCM08ISJGKuK8ikEKeG0uFEDmpRy3HqSp~X4NNIGWgz1fyJlxMqZiS8ybb-j1jJDgp3-CK9XDyH63Dg__",
     link: "https://acm.oregonstate.edu/",
     github: "https://github.com/osu-acm/website",
     demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000051675-acm_njg7ja.mov?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=QPjmmwN3KPOyOVf2rHHP93HOCUu9M2ovxq9byVozeXswDDkt-JzeVP1IuOr4L8r84sZ~3hEp16z5rcPo8SwHp4B-QreQfkxV2ucOOD-TnbptH62xheD~FhiAWhx8wlB~cWesVV6ivYkLzK6nUsvatmhwca4K~bteswQYWBsnh-CuqktJiunoNVCb4-wn-XBaWt8YB0oBgTt2pH5gX7DX3~Y6iogzdRjks87m2PhJ42PJCXVK89HScWIsra93loL6EuJyilh3HVJaD8qhFd2omp-XVXCFUR-Kw4IVmVR8EXcNsrM2QCEfX8omk7IAmYia5JzZ6uDVZ6lfKC2IqnVfDQ__",
+      "https://d3uraa353l50l1.cloudfront.net/video-1706001739745-acm_njg7ja.mov?Expires=1708593792&Key-Pair-Id=K2QFIALPUONXG1&Signature=vJbCdVJJvNw9UAY2p~3vZJybNwgGgwH6yKNAxbM6OOZEjYjOx50OHQL1o065C~lfGwTDMFzGN~a1Rblp629KF8En3~UJfceV8FRpoan-Lyv~BNSJT0FJik69RfndafoSVOy2IQ6yo-LIO6IpQd2l~RRpX7wOk0UEgUGwO-DmwOjRqJnS~NtdXrBWDSt6Ywt-mPXUquvYuH4AqHtt9rqG-fCn1tB2QAXopHl8WBawj63HQk8VR3QuO3Id2wV36mTV5afJzBg29EryHshXcrIOFEhTf1hp8oek~k3yCknFynBZNhY8fV-PC6tOc6QEX0e5Bf6AbhBm88oo6~Nu6qss0g__",
   },
   {
     id: uuidv4(),
