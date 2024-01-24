@@ -45,131 +45,6 @@ import { Image, Project, Social } from "../types";
     link: "https://uploadthing.com/",
     github: "https://github.com/pingdotgg/uploadthing",
   },
-
-    */
-
-export const projects: Project[] = [
-  {
-    id: uuidv4(),
-    title: "BeavsAI",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1705999424668-Screen_Shot_2023-12-08_at_11.06.02_PM_d9zj0j.png?Expires=1708591844&Key-Pair-Id=K2QFIALPUONXG1&Signature=SMfEK6BtbC4xMkvbWLPPtm~MZz0oSW3YcdwNc6IhVmdmHgirgdwWn8fiquG3y38S7~eYB9ewXlGW9P~0tHkpiQmRveNSgS202vl6rhw5rcXZiNiXoN076dKimB4F1a4Anebg1XUuk7jYGCerZ7Hld4-IhPCjwwu3kLFZiJiM01mihfmktWNvB9pKeMJQ4QGgo7SUzD60TZhayJD~9mKUbEQ-BcsuZJv8xfy0wWU-xjuBfoN5SCfq5qqhEzPgCAHgTFVgq7KuKLVJs-YIGW9wyqDOpFLH0mwscKgIZwylnj7w~2OumNXXNF2OVmBDUVH6KJB8xcfk~Zes1aK9LUQYLg__",
-    link: "https://beavsai.onrender.com/",
-    github: "https://github.com/OSU-App-Club/beavsAI-frontend",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1705999762920-beavsai_vj6hyw.mov?Expires=1708591844&Key-Pair-Id=K2QFIALPUONXG1&Signature=kYfdCx16Xzl24sHW-WZmkfSrthAoLB9Ceb6OaNkx38V0tVx6I4FGPcgsh9QfZuA70JCTJcaSg884Q3rwXgH21QAOmgtw-rpUjzUA42~QLvudKBOBYrWbo9741H-UnsOtVA~WMu-vQ4IKUB7eakLEBjKhJZth-7x7HUenoHdm7bT23in9bTHfLe73tEOhoDUpvX5PSpQn1JTDmViSpTAa0WknxIfy1tYYTRlKm3FstCcHgs0O7w0kBUXtSN2irS8O-MOKkErHXHclgTzm7bRDJwSSyA6x9yzIPo5TFmnuDa0~seUUg0TnUhvnmCAIe4xmpqW3h5JQAW7A1RdnsNrluQ__",
-  },
-  {
-    id: uuidv4(),
-    title: "NyumatFlix",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1705999932504-nyumatflix_k6gko8_niyilq.webp?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=V6JYeH7Fk6waeajlgC41AhwlRlTIERMzWOKkt3fWdYi1an00Nj4tpSYqeQ7DkosouDU9npzYnihFfFXlSL-1LZMuL4JzqSakFL~-3K1Fo~RlXsFz3Ij9QlFfo77scZntEGsdONQ6MhARwPljSnHOX8A0ulLMW4qmAwMAHDrD5GtnuLZYM~BGG1MsqrB~TBoDX1MYMcE~l8HUeAuoRk4d7jw1Fp~oLAwjkFRNF-OdBmR9lrd3G49Z~0d5FlzU6Oj5YviBl4kNjHou-gjFE2-D7YeEEnMqxyTI2dRBdA7rA~7dQZR2qhwmRjpDql67t3bwoEJoWhpKbJDocNhMPDgSFw__",
-    link: "https://nyumatflix.com",
-    github: "https://github.com/Nyumat/NyumatFlix",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1705999969736-nyumatflix_k1n0iw.mov?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=pD6MhxBz-WYLnBAsP2waDOoRTtEAzTiIFO1DmbLJHcXaMJSxdKYO4Ua8ZOkix1pgeRcnBSrpyCDdAIfDXge4-o3AMK3i1f0Nv~G-ZEpkKdjkP2qvfsgA4w1dv6Rdj3P5PxS~jeDWpDnK6LM-wts9p7Lbf4Pz1hPlejoHQF~EkGFjPy9Yid4nRUMrclGPtX~49KE3qlM5B~pfBCtKL~PcPT50Wty5uur5BaW1Qds1NG-LXjFiEXrTd~-qYnxQmQ00hbJct9e5tFCNecpl7Pj2RxeDyeDXfVahsUe4Smx-01LPd1TLwp1lyzI7P7o8piIXkD6eRGAHPSZq5wf2nymhbQ__",
-  },
-  {
-    id: uuidv4(),
-    title: "TalkToBeavs",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1705999996354-Screen_Shot_2024-01-02_at_6.38.57_AM_iijp2p.png?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=lgntFURZxQFKUAi56YTQqGOEOQ9Rwz~jZyhzb-12g5KIjRS8GeCr-tv821~Lzr3IG-tPxGWpQj4z0gAIvQRSamQx~PVlBUBcjo3jwQXZN7KZ3G~4PIYXryug3GGZ0y1SIX-SQGtKSAaZYbrz7qvWcmGoGjEq-qZO4kZkFEIL9osBsXu4ZmxOr2O938oPIohV1p2jxblVpBsx-xEtdf~4kNSYC9dlIUEYuxYEHRe7JdlhyC~I7Gepz5tTXvuVXLN-sWZalXwwJD8yJTvE4ClPX7YIPGydlF1FfGvLm9fre7WP4qsOY~q8rtsncZ2rGRfbtYdzRy7ByEpmPXU1uZEC2g__",
-    link: "https://talktobeavs.onrender.com",
-    github: "https://github.com/Nyumat/TalkToBeavs",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000010287-talktobeavs_xtpouv.mov?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=bo0MhKC41XZpyJQGzipHcZVPYlnB5ao13U65c5OypqIdmO4tt-yLI5l-jtjhAqeF7QtCNhmFE988B-Y3hQFT4oclOw-6Zxbji~oPUrkwIHYWhfdcDsz-gAztQMK8qZeW45mbiPba0hbcoyCXBKGmU6BXNdK4e51iw3mGnWur46uxkF5cdFdjBbUj6MeokYxIbfCXRPyuoRn-NC53zif2Yj3Y3vEK~6hK-eemfNShVt2z4Uqzl7aiUGE64DjUPGT2cNMZz6el-4mJuj7-GJQhkwLrUt3c~PBH7ADzwvJiy~6x1~SpgJ8-hKBjLCNdcPmLa13~yGIFynNjHCVCZ6AHXg__",
-  },
-  {
-    id: uuidv4(),
-    title: "OSU's ACM Website",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706001733500-acm_site.png?Expires=1708593749&Key-Pair-Id=K2QFIALPUONXG1&Signature=IsJa-WBYBKY4l61ujWcb8OAoPNxuKhIkKjdst108625Yp00~-c~-cfFZlb9G4dwX57L0iugW1vI58nqD-ZVpGZkc~AbknUwPFP63ZTYHbKq5Ivpkq9xaE1Z4H7d-wJbeojZtGSOTcpT~1geIx72lHXR~iNb~K-aZL052k73xGfNtZPBk4iTmO2Plp-Q-OQl-lgqv~E0Qv4UkSd8TfbOV~TPZXNq0AuJ4y2y-CWfQm2AZRPMYEy54fM25km9Wen4Lapw~svcyCM08ISJGKuK8ikEKeG0uFEDmpRy3HqSp~X4NNIGWgz1fyJlxMqZiS8ybb-j1jJDgp3-CK9XDyH63Dg__",
-    link: "https://acm.oregonstate.edu/",
-    github: "https://github.com/osu-acm/website",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706001739745-acm_njg7ja.mov?Expires=1708593792&Key-Pair-Id=K2QFIALPUONXG1&Signature=vJbCdVJJvNw9UAY2p~3vZJybNwgGgwH6yKNAxbM6OOZEjYjOx50OHQL1o065C~lfGwTDMFzGN~a1Rblp629KF8En3~UJfceV8FRpoan-Lyv~BNSJT0FJik69RfndafoSVOy2IQ6yo-LIO6IpQd2l~RRpX7wOk0UEgUGwO-DmwOjRqJnS~NtdXrBWDSt6Ywt-mPXUquvYuH4AqHtt9rqG-fCn1tB2QAXopHl8WBawj63HQk8VR3QuO3Id2wV36mTV5afJzBg29EryHshXcrIOFEhTf1hp8oek~k3yCknFynBZNhY8fV-PC6tOc6QEX0e5Bf6AbhBm88oo6~Nu6qss0g__",
-  },
-  {
-    id: uuidv4(),
-    title: "NextJudge",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000438901-Screen_Shot_2023-12-23_at_5.33.27_PM_wd94hg.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=BU6hi2omY0K5pLQ3iCeWQScOfBCgrFqWe8iKmlhn3oQ~Ran00KYCWdKCr6LzUhH~KExbSUBPZkbJWAagiiAO-~0WFUHVBE5No1MTt2FriIEGOoIkG0QIUM1DZnBJQKbRnLpnfotvhTn9GQh1yyIExg83p3KjvOisDmTxg7lsqdBL~SKyLy0ObsouNTxL3d02I~D~v9h1z2S5yUCjXLb85eUiXdXkryL3qfT~yRV8GHuIW2A4pfK~pf~3bULEJv-UtJj9uuYWApxE-jJOZxGucvK~mT2RM3K0Csv34zdCUHZp~HJrtT7Mc10w2Ao1rHLVt~QS7ZREsvp4VrwgnSnj6Q__",
-    link: "https://github.com/NextJudge",
-    github: "https://github.com/NextJudge/NextJudge",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000392024-nextjudge_simocs.mov?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=c8ryNfIbr1AZhoBThtEb2mGVwv1-YKAW8RZbsarDDrero6vsinAstNvYnzpKziR3L3lArVq~8~Hcb5lMFx2eHFqSooBzeZ0HC1jW~8BaMj0aPwA1Fsgo-guMnVmHvKzFk90y-tOuGvzAyvS0wpvcpUf9QYXn8SGgKRpUUI6JAECkRaN2G1fpB4ZwowcLm494cCauRFzA5pIoQcoCOB-KbByrnwaVWGyFft3yNX6jaLMAJD7sHPoY8HbLc1RcgtHDIRKzOIrMaIcUKEb0PFybziA4FMjSDevpKi2sVfBac~xRY~dxKeHaCCvm4IhTd~6e3Ld1f12ImKDXUjw~CIUmhg__",
-  },
-  {
-    id: uuidv4(),
-    title: "Nexus",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000461391-nexus_hlfvdb.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=eOCSYHctOmcik8FvuObYqo9qCzzGwa74ixRtPt37TGG69DurnyXMkzs4K3rZvf99Po-i54gTM6OFuXnzJFVKI-xtuVNBoDgV9f-YF8VvCYlDp4X6WFuHbHE5D9PsdnZVdW-fiOeerjJdX68ZvzXjnTbKXzenYaNWUAKUg2AsanvhA45DFofnyGD9mrpzt40oYH0y4Qb6dcCsO0OtAiZo2TA1zBLDnukDiKxa0-d~Iq5hCv6uH0Gwgc4NOxtJJiDVHRBYuWb7T93znKAlWbuun3vM6pGB0BhkIPdWjerALI-xAOxYPN-kFX0eszfDcdAjsRh1jWwzx-eC02n0BHNvmQ__",
-    link: "https://devpost.com/software/nexus-27zakp",
-    github: "https://github.com/Sankalpsp21/Nexus",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000836598-nexus_lauyqy.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=ycCscFI~jsA2wKjoyskrwP7-MVwEmlEGNFbcmCFPuieiQK6aCWalaz2KEzoZkjwn5tbwVbIClBoIGhQAQ4qoMwD~hk4Kvm3CySoAeyhADtlioqgcZz~4m5~kOsoKZBYc7LmwiCTiGR~sXW-iiV0kHBV9Hb77J4r-DtIUY7OVm3KZ6zepdK1GSg4j9QQeiVINjHwOkcF20uqBfQkD7iA2N9FnOeVIjnAZ2jbyiCwPp4LWPZldfV98ZY2DZSsg65kVS5XVOSUcaRdse~vAZMtTOVw2wYaFEEMICZsFYMOA8~qdNxDIdVCSLY9wANCq3u9b4ysKXyuB7fbm-4ZuAOCfKA__https://d3uraa353l50l1.cloudfront.net/video-1706000836598-nexus_lauyqy.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=ycCscFI~jsA2wKjoyskrwP7-MVwEmlEGNFbcmCFPuieiQK6aCWalaz2KEzoZkjwn5tbwVbIClBoIGhQAQ4qoMwD~hk4Kvm3CySoAeyhADtlioqgcZz~4m5~kOsoKZBYc7LmwiCTiGR~sXW-iiV0kHBV9Hb77J4r-DtIUY7OVm3KZ6zepdK1GSg4j9QQeiVINjHwOkcF20uqBfQkD7iA2N9FnOeVIjnAZ2jbyiCwPp4LWPZldfV98ZY2DZSsg65kVS5XVOSUcaRdse~vAZMtTOVw2wYaFEEMICZsFYMOA8~qdNxDIdVCSLY9wANCq3u9b4ysKXyuB7fbm-4ZuAOCfKA__",
-  },
-  {
-    id: uuidv4(),
-    title: "ISpyAI",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000473713-ispy_rykpja_dtjayr.webp?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=MtH--xO7MC3iNrQVgXRVURoyNB3ypIPg3hQdPFGpXjHiYj48Ob-lXYmgm03tdM6zCF5Ft6HQ4IpSD9SAekhLrY1nC-Pc~OD9Mnyxp~xV3YCxpyElMSPltPP-lmxi6EJox9VNZbd6iBIUg85HQOKVgQjlG12BmCNeKYgdooU7bF8b~UgzqUszU5ZOzbbjcK6170CSAnPa5kXjx8IKBtnArX~yqBNFFEUiBSMuyKmjGbYoEhnLVeyeUcVDislvSh32dMbikh534kxzhDikZLNKIXh4TMgfyx0VE5yR1cyQZ7ewPwjFm9BXOOvdVEBkarkCchaBxh2yL8DkymSlNannIw__",
-    link: "https://ispyai.onrender.com",
-    github: "https://github.com/Nyumat/ispyai",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000879625-ispyai_sssn9i.mp4?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=BkAbngFUh3cWTZIFGcNMTbxm1TOuzRO~T1QDiH0khnn5FY9TcWimUuI6Ql54P2RSgyVRPr4TrGNyQWHUmqzBrkrYbfMSsakYQBJtwuMl1FTibsQK-cY7I49wY7eaNSYHojdXoU5m5ER60pX8nnTi62nOYQuB-t0yoWQJxUvdTMJwCmZ2n2CygVmWS5UtCeTuLh64b7H76puLOENYJEaHN4dX5j-zSD4qR6YQG8bXhjE-OR7FMWlXWPRxPGX~CMHzZD5A77MWCe5RtHDof~F3XtBQddBkTYzfWqGWCo9s56MlwFYjy1mcvzMZouAwtRdrFozxImlP2XKB0E64GeP0hw__",
-  },
-  {
-    id: uuidv4(),
-    title: "MockBuddy",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000489392-Screen_Shot_2023-11-20_at_6.33.21_PM_qk0vsc.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=leCDdsVl0VEBXHyAFD39k0s8WykeAqLFkPSOSCpIGQ9LW19k98qSYcxJQE30y4RIZtcHAD6amp6wwtascTW1v~tjzaUjJm-7zhvc7WgfjX8vgpZZiZPdeDgzYYd6rWJSeSUtr2yEKEQVEC1PtWXsskVkbYv-6OTmKzd2QpVcWHVLq81BRSGvXZPGgHITWOZioBepOVkoyutDRcfwSIhnNKevAIoTmBJ0EchYftfupFztev0x5JX8uLM-2AyvyLYffyv-kN2uKiFqZOwH2lSipoTjxhXRgjdTB9K3gbHMGg85J1BjPTlfBCK0-9jibo0S4tMo6zTsoUL82W4mi4nPhA__",
-    link: "https://devpost.com/software/mockbuddy",
-    github: "https://github.com/Nyumat/Mockbuddy",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000893836-mockbuddy_qj2pm9.mp4?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=a3bcA3LXbrBIUj-4eejK6nLcNON-P7D8-9pJU1HymzeUJgQd7MH~03krOJWRL2ahlWoebPzRYZqEluBnBrIoHrybajofcjx2kKEbCQlGf1~gsXI8DBTHIMEBuhPrgbOk2~DN4PGCJxgf4e0ncD7~2eI0bkKNLUukPRoD5XafheEPoXiYClOh8PWVZSBln2YkiYLoDksU3~MeitFDy3Khg1kK6HqK9pM7nHXPryLZgT~rKYscOObnlS8gzhWQRM9hxlVvkAEYayqJTa6VZYZmz5DV0fPvetKUVhUNx-y-4rMjogbvOEvcmAq-VewxWSaHCFKPhUZJkR4go8rCl9eTwg__",
-  },
-  {
-    id: uuidv4(),
-    title: "Band Photo Gallery",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000514075-doesband_btqagl_glkkpp.webp?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=uLddpA1IF0-F4jUOERdbyVs85oRnSJXRoNTEeaGVdkya1tXHgGVIHQ6nxzozsPl4DpTdh35KSnXie9~qUSCVkw1Qv5MClQike~Rl~aM8xk-2PCk-Aw6IKkUjQOmJkjvMjDyTMyyr4p1Mix7w7Tv5H7UiXmxQSkckF-9CHuFElZXRzKHBV9BG0rgnOHcwaIXeImHaAZNFYOWUzQsCU-v-7V~QKqGZBj0lMdNtL2JVFm6W07bMyny5FP3l3SoKepEN9VMI3V8zNb5HBonIFO~EqfxMObJsr7qKVoND6JdAiZWemc9vlPi70JKPiU4FucjqdFSi6KqRQWaMmmycGR39LA__",
-    link: "https://nyumat-does-band.vercel.app",
-    github: "https://github.com/Nyumat/NyumatDoesBand",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000907264-doesband_wdxwbi.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=uZSTRKn1fH-2XyX0BuzSl6oGDSOaIIT~Ub9A-VloDFNbECiB1oDNt6096bAiA7SaVz~~1-cB3o6L4stb5eFQCi27H1LJuT6PWPoP-iuBNjsq6kyBW0N1iyxZjX4WTAgPQHw2a8kgmJCDZZlfdy-2XedZv-EP6jwIZu~NkM4-POHkvbg3wJi-Aye7ddtgGyVFr7Ew3uYSYUE7Li6XrzBJLB1B0srz~VMc~RlOWADbPHjWYQJp~ZqtqFscm5Xc6O2lDUCtAS9gQO~5~gnZPAnr1KLJXcQhuXzoImuF7hHThosLtU26e3vCPOHHLDIQ~c~FsM9t4bo0o8ZWr8JCtfqFAA__",
-  },
-
-  {
-    id: uuidv4(),
-    title: "CSS-in-JS PokeDex",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000526328-Screen_Shot_2024-01-02_at_8.36.11_AM_qsp8x8.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=G-l7ejIx~67dI3-yKi~~MEy2lsUgFnhFpuL6urh7vQVQnZQah65aMyqOlgnLX8SaJK2cTzJExDMvNloRXVvAOA63SKsjCQWxJZj1ST4mH20P6LgvzMqmoMu-NhJTtZNiqKmvBHyNKlI9o1BHj1VSXGvSpl90A1MzMOg8YMV850hBP79VU0nqcwFMtykSzXqZGmrM4K8SOt-hBOf3D3kk90dxS9zR~a88b40PTByrqF8j~~86Qn389M~EqmhiNZN6incnkto1lC5jvz8oesRxhLORYxq~Tu7jX7t6Q8yJg2qXOT6c1Aglhcel3LBaNPKyz1~nhpI5~Z1n62J3Hklfew__",
-    link: "https://github.com/Nyumat/NyumatPokedex",
-    github: "https://github.com/Nyumat/NyumatPokedex",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706000952940-pokedex_clfse3.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=vV2xnpjPO5uJkE0~40D2uNyF5dMdmCnLxkfVbeujp6u~XvEKWcctHGgIHjolN9e4xwoD8u9WE-7B0gX9p3j0JSuiR4~7WX6G8wpp~WKOs4KHYv57OwhT74d6wRGOx3k5zzfKEGuBfx7MdNw7WJMvAeU08jsIcD6qG1J23i0eOh513nX-EfYipIkuDwabVBToEox8rgKtDJMrstJ48XUt3KuxwniO-qYXtpVF-DhtHKE9tXhcIYx2v20on~7IpfZsL8TqHwVQPcXFlYidTExQRp~DlSmx3Tu5hv3ZNFl-XoUBe0b5FIJQa469~S5S7ACH~WXCjW20Q~vn6PmHytpOng__",
-  },
-  {
-    id: uuidv4(),
-    title: "Syllabot",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000541688-Screen_Shot_2023-12-25_at_7.17.56_PM_xztq2k.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=QpLEI9TFmUgWoqCUj6gGC5QFU1limO6Cop1GP0lQccuwwKOjYEvL5fYh69HMuuRED1p0JQRfRqCcmge2v65BNDFigWeDealJkFOPqF1saKKysydD7b7~HGPjGkKhVG0rTcImDzQgGBkB4T7Ais~RiBrdhl-uf7GQeohAffskZO6zOBgRZgZrlfKLpDiIOwfEQ5WhK65htwim8zQmbI7BfYZmfBkcIfRLpIRfMg6P0AjlkzapYQ3VWHntTggf3W05N49F5ciygnhohTHyhQ1yvqIVQjwEYDcCzv-GgbrKEXOFkI3PN9ilCw7mj6KqShV4efc1CDJ9YSK9~3xdx9p1Yg__",
-    link: "https://devpost.com/software/syllabot-1dxsil",
-    github: "https://github.com/Nyumat/Syllabot",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706001074998-syllabot_syifai.mp4?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=KwN3GSZA5H0Z4UK-VlntIy~p43Dw~CiJbUUrtpB0KD5msB8sxtBkDmzOnxlIt0j2dB9ksxQ9tdBtcFpKDk2D34QXyc8oRIiJOeP6lK-MjxJf25FZOlUZkzIRZvcaFC1uKy56AF2F8jtCj7MCy6X4jzrgUHSDKjPmre0qzfbxdb3OYi0Zm3GKtk-~vCAdZCfk~NC6iaETGUeJYlweb3hwouPpJL7m7nf1pYudJh3N3zhPVEQE4kbVZN3zQvpwbqTFWIs26vpUAXC4ahhb5pTR89qmhThzYRLdIBhsNRS5HPt0QomMUjSkPy1T7MV6vHDWOI8HGft5GcWEv~ncqzg-Mg__",
-  },
-  {
-    id: uuidv4(),
-    title: "Open Source Diversity",
-    image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000557345-Screen_Shot_2023-12-25_at_7.51.27_PM_adjhyv.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=DWVnW0Bkx-vxv4uZwgXNKUBuXCuaDLQwYBHaF0L3naqgUb1r3sn9ffK1IDiHALKQlaCPAylTuzpaEZ~D2kREV9pbEm18a5BFojf3Vo2k6WCDSKjR~fx4BLSWmS7-vtO2dwV8Ee3B1BUFVK8ee49DO1PfiynX4BZwDCXllzT4upfHtWWoM~IAkJ0BKWVvx-b0R85Lb2vHYu71HfbVUFO69hqd9mdAvA3IFjaTMEyhcu0EnY8KmvTJCRsceuqhYzd15NZMuLKdxk2UguW8hd3QyYc-Mrat86YqDyL5IZ1uzmUqpgECd~VkIn2WNZGWIszJSf0C5TVRpRklwYTIw3Y0XQ__",
-    link: "https://opensourcediversity.org/",
-    github: "https://github.com/opensourcediversity/opensourcediversity.org",
-    demoVideo:
-      "https://d3uraa353l50l1.cloudfront.net/video-1706001090973-opensourcediversity_qm1gpj.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=BQFJotJXhiiMcDzHhDrxf0PHr7FG38mwiYxDqm~BJWtzQovCJROg4IKmUAtbXGyr2F9zruJTdrTWxgvni2WBeR-JS-u~v9MPKX~X3~V2QJBXY99HJeqlqwvaaqOnfznIuC3BSxIIKoOG2-hs0pbgcsUoJ0nWZX6mqIxnIpOKTGmCig5utdU8lmfqJ8DNLdUX31XU9E0PrSHcjrsIVvXRnKueXNe0bbsY97xgBfeMJPPMCe1ez-a155Cf5q~84DySTIRV4njY0zBNNFAWj6G7jLuV5k6JaTm-AprXvZ21CFTxnJIkEc735O5jIACGQh20AHyASo2j-p5SgYe0JZAaiQ__",
-  },
   {
     id: uuidv4(),
     title: "Astro.js Blog",
@@ -199,6 +74,130 @@ export const projects: Project[] = [
     github: "https://github.com/Nyumat/ProgressAD",
     demoVideo:
       "https://d3uraa353l50l1.cloudfront.net/video-1706001160467-trackmedixon_vre4qc.mp4?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=hGR4bfksOnQ9w12b0RJQYu0gvg4Ij8QGtP3NVEAlMrQhRh8gkezEpovbfyvHhkSMl~trXyoYgmYBTYnrfvs0ByyENxSVHsZUVm~aaxvgrzzBlg6e7O0CDGY9s22z72BO6ZCFinpetaJMPZEwv8DGIOu7edc6AHFLfCqYfnVwiXuIcUe1p--0R1UrXXBewJbp6z0-sqwQv1ab~TdHTzoonuTgmgjPE4XffLNjrFPLslfuIk~2Ur2OXE08OUotNd~b6S-8KkVCSdoSJIDINer6ZhFaMM1cLa7WWpBT-W4NkaHWpDkcmC8OOLoRYqKH4Y0ZizGCnybovRE13yPF6loeIQ__",
+  },
+
+    */
+
+export const projects: Project[] = [
+  {
+    id: uuidv4(),
+    title: "NextJudge",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706000438901-Screen_Shot_2023-12-23_at_5.33.27_PM_wd94hg.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=BU6hi2omY0K5pLQ3iCeWQScOfBCgrFqWe8iKmlhn3oQ~Ran00KYCWdKCr6LzUhH~KExbSUBPZkbJWAagiiAO-~0WFUHVBE5No1MTt2FriIEGOoIkG0QIUM1DZnBJQKbRnLpnfotvhTn9GQh1yyIExg83p3KjvOisDmTxg7lsqdBL~SKyLy0ObsouNTxL3d02I~D~v9h1z2S5yUCjXLb85eUiXdXkryL3qfT~yRV8GHuIW2A4pfK~pf~3bULEJv-UtJj9uuYWApxE-jJOZxGucvK~mT2RM3K0Csv34zdCUHZp~HJrtT7Mc10w2Ao1rHLVt~QS7ZREsvp4VrwgnSnj6Q__",
+    link: "https://github.com/NextJudge",
+    github: "https://github.com/NextJudge/NextJudge",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706000392024-nextjudge_simocs.mov?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=c8ryNfIbr1AZhoBThtEb2mGVwv1-YKAW8RZbsarDDrero6vsinAstNvYnzpKziR3L3lArVq~8~Hcb5lMFx2eHFqSooBzeZ0HC1jW~8BaMj0aPwA1Fsgo-guMnVmHvKzFk90y-tOuGvzAyvS0wpvcpUf9QYXn8SGgKRpUUI6JAECkRaN2G1fpB4ZwowcLm494cCauRFzA5pIoQcoCOB-KbByrnwaVWGyFft3yNX6jaLMAJD7sHPoY8HbLc1RcgtHDIRKzOIrMaIcUKEb0PFybziA4FMjSDevpKi2sVfBac~xRY~dxKeHaCCvm4IhTd~6e3Ld1f12ImKDXUjw~CIUmhg__",
+  },
+  {
+    id: uuidv4(),
+    title: "YetAnotherPokedex",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706000526328-Screen_Shot_2024-01-02_at_8.36.11_AM_qsp8x8.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=G-l7ejIx~67dI3-yKi~~MEy2lsUgFnhFpuL6urh7vQVQnZQah65aMyqOlgnLX8SaJK2cTzJExDMvNloRXVvAOA63SKsjCQWxJZj1ST4mH20P6LgvzMqmoMu-NhJTtZNiqKmvBHyNKlI9o1BHj1VSXGvSpl90A1MzMOg8YMV850hBP79VU0nqcwFMtykSzXqZGmrM4K8SOt-hBOf3D3kk90dxS9zR~a88b40PTByrqF8j~~86Qn389M~EqmhiNZN6incnkto1lC5jvz8oesRxhLORYxq~Tu7jX7t6Q8yJg2qXOT6c1Aglhcel3LBaNPKyz1~nhpI5~Z1n62J3Hklfew__",
+    link: "https://github.com/Nyumat/NyumatPokedex",
+    github: "https://github.com/Nyumat/NyumatPokedex",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706000952940-pokedex_clfse3.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=vV2xnpjPO5uJkE0~40D2uNyF5dMdmCnLxkfVbeujp6u~XvEKWcctHGgIHjolN9e4xwoD8u9WE-7B0gX9p3j0JSuiR4~7WX6G8wpp~WKOs4KHYv57OwhT74d6wRGOx3k5zzfKEGuBfx7MdNw7WJMvAeU08jsIcD6qG1J23i0eOh513nX-EfYipIkuDwabVBToEox8rgKtDJMrstJ48XUt3KuxwniO-qYXtpVF-DhtHKE9tXhcIYx2v20on~7IpfZsL8TqHwVQPcXFlYidTExQRp~DlSmx3Tu5hv3ZNFl-XoUBe0b5FIJQa469~S5S7ACH~WXCjW20Q~vn6PmHytpOng__",
+  },
+  {
+    id: uuidv4(),
+    title: "Pipelines",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706085239815-Screen%20Shot%202024-01-24%20at%2012.18.29%20AM.png?Expires=1708677247&Key-Pair-Id=K2QFIALPUONXG1&Signature=KfZ9UZuAKkPu2Au5xV-cvOxuKXEgoZFrcOCDFJhotJY3vyPbeBDAUmkKN4LS4IKnZrqeVxtTsR64JToxuSmkC1SYAXgEAyVCL8yy5o5T-7JgsXDA8Vfb96oFMoIANqVCnnYUkI4QcEriL~GsByMlVVSUKvDWgOYR8M6N~-ES~9UIehtqHqBmgQGBMlIrdOksJ3ln~cFXAw~mALCpLTihU~u87-2ujR7KDggjj6PoY5TaOscnef5F05LuLFmqYzJ9RqW4fCqGRE4rluVoHPe7H~3ZRvoX-Z2hry3O6wmdbhf270zXRO6HFblLrqU2zLtWbHMHULI3zXeYohx2muZkXg__",
+    link: "https://pipelines.lol",
+    github: "https://github.com/pipelines-lol/pipelines",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706085179886-pipelines.mov?Expires=1708677247&Key-Pair-Id=K2QFIALPUONXG1&Signature=EBiZ~CPHfyIi3wNmZtm4hnPd6eyB-NgJ4UqA2aM12EIFZw0z~5UmP9ElEwus8QtCdXgReAocvNPm6uylRa0H49I9IXuWgGyKPS4EwSzpMKc7yK42jH5Kq~ElnbJDmIV5APS7D5OVBTY7yIiWxMeHENGsFWeIw06sDVR3RUXaa~xPB86OdNBqKtCQrSSVbJ7zHd-nfsemui5G-GsqNwIPBq8SuGeC0b2n5NXKeVXT9ASCl32TDYnVU0cSVUaVoyJNmajW82KKl~EZpCM8-mG9Foj~4s4Fvmx5ooLM02NtmcDVTo6YFSVrGLgEekvW~ED-Ii9SyXb4nE8iChwBZRcT4g__",
+  },
+  {
+    id: uuidv4(),
+    title: "TalkToBeavs",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706089213236-Screen%20Shot%202024-01-24%20at%201.39.53%20AM.png?Expires=1708681218&Key-Pair-Id=K2QFIALPUONXG1&Signature=tl7yh55T0I5g2S9M~HjZ0jssy-s~8jydIQJoHbVXO2VDsdrNyVsht2Y7eLzPxEK8iQklq7KDn5rpCg-dcrdkF9LlBQUYdYrgpEFtN1sxH2JrYUosj2pt7DTJEGXhUfdpvjMN5cSSlAkMbtQk2jD~gjjer2xCB1PrR2fzibjlm6XnWy~Zv869pHWqyUo~~JNUE3dZC5k0xhPw-A2OuNLNntXQ~6vSh2AnKFYYsJsYQDyqxCjewwpHTfhGdlTxafu3leXlLF-4p1Q543ywWrPAfxhxSuG3Cqt9uTwzK2NIY-HwPHBWPAmdVML7A39S~dcq2bNasJQL6LEg9rQGVSQFsA__",
+    link: "https://talktobeavs.onrender.com",
+    github: "https://github.com/Nyumat/TalkToBeavs",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706000010287-talktobeavs_xtpouv.mov?Expires=1708592238&Key-Pair-Id=K2QFIALPUONXG1&Signature=bo0MhKC41XZpyJQGzipHcZVPYlnB5ao13U65c5OypqIdmO4tt-yLI5l-jtjhAqeF7QtCNhmFE988B-Y3hQFT4oclOw-6Zxbji~oPUrkwIHYWhfdcDsz-gAztQMK8qZeW45mbiPba0hbcoyCXBKGmU6BXNdK4e51iw3mGnWur46uxkF5cdFdjBbUj6MeokYxIbfCXRPyuoRn-NC53zif2Yj3Y3vEK~6hK-eemfNShVt2z4Uqzl7aiUGE64DjUPGT2cNMZz6el-4mJuj7-GJQhkwLrUt3c~PBH7ADzwvJiy~6x1~SpgJ8-hKBjLCNdcPmLa13~yGIFynNjHCVCZ6AHXg__",
+  },
+  {
+    id: uuidv4(),
+    title: "NyumatFlix",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706089368940-Screen%20Shot%202024-01-24%20at%201.42.17%20AM.png?Expires=1708681374&Key-Pair-Id=K2QFIALPUONXG1&Signature=dXEqY3p8CmYIjJW0xv5GURBd7Y7lo1yhUSVo0qChqu~5Ti~xWh7rEIOwHilKd-MZrRL7Ui9dfoz9xaXG9gQN5ksWRGb-XuPQp7scrMjx-cS6qZ3~YhhXZ0fxrIIY3eQipG-X9x1ffSatIiCJ0j5BYvQmZSzWp0AD9O9jU7YDsfCrlllMvd6MoPGKGdSXd0tKj9los0dREmnRhgzOjT2BbD5MrT-Kjy8nIGuVsDJuSIusFD14xp1XeTmeWfzOhdBknUlk4AjMswYj-b2xVn7DEwGTmjBp20fevuQ9o6Ay4dQ0tq9PXvBkubCUvpSTtqff9HNMll4~zxNC-QinYT35Xg__",
+    link: "https://nyumatflix.com",
+    github: "https://github.com/Nyumat/NyumatFlix",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706089620561-nyumatflix.mov?Expires=1708681674&Key-Pair-Id=K2QFIALPUONXG1&Signature=y7y6tDfEgVW-ONtOp5lgeS8S7VOGgdrrPyfOXNk4jvFfvwuFEn0NMb-qUzy3bd9AO9SyyF3YTVdj39uzp2~EW8V4WWi1GhbMLe3r62jZGLZJLc-krEZmb1A3lc4RKq8eN4rLcjYkvNRfd4T2ykkhMjUWG5t0XuIqKOEFB-5HGMfGJy3pylpsZAQFWHrNdXkyrwhLFrRX-D7NhVZPRUDyai8t~7CDjl0Dl~yUa8EOWPz5ENd3zkj09uJ9IJ14BwWe3T8zPMQIuTJFnG-8jpe42b7CIcYh2qUl4VJy1Okj-pi8dbrS42qn6ivXTF~xG2GLk6dtzTftDtABDPb8c86Now__",
+  },
+  {
+    id: uuidv4(),
+    title: "MockBuddy",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706000489392-Screen_Shot_2023-11-20_at_6.33.21_PM_qk0vsc.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=leCDdsVl0VEBXHyAFD39k0s8WykeAqLFkPSOSCpIGQ9LW19k98qSYcxJQE30y4RIZtcHAD6amp6wwtascTW1v~tjzaUjJm-7zhvc7WgfjX8vgpZZiZPdeDgzYYd6rWJSeSUtr2yEKEQVEC1PtWXsskVkbYv-6OTmKzd2QpVcWHVLq81BRSGvXZPGgHITWOZioBepOVkoyutDRcfwSIhnNKevAIoTmBJ0EchYftfupFztev0x5JX8uLM-2AyvyLYffyv-kN2uKiFqZOwH2lSipoTjxhXRgjdTB9K3gbHMGg85J1BjPTlfBCK0-9jibo0S4tMo6zTsoUL82W4mi4nPhA__",
+    link: "https://devpost.com/software/mockbuddy",
+    github: "https://github.com/Nyumat/Mockbuddy",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706000893836-mockbuddy_qj2pm9.mp4?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=a3bcA3LXbrBIUj-4eejK6nLcNON-P7D8-9pJU1HymzeUJgQd7MH~03krOJWRL2ahlWoebPzRYZqEluBnBrIoHrybajofcjx2kKEbCQlGf1~gsXI8DBTHIMEBuhPrgbOk2~DN4PGCJxgf4e0ncD7~2eI0bkKNLUukPRoD5XafheEPoXiYClOh8PWVZSBln2YkiYLoDksU3~MeitFDy3Khg1kK6HqK9pM7nHXPryLZgT~rKYscOObnlS8gzhWQRM9hxlVvkAEYayqJTa6VZYZmz5DV0fPvetKUVhUNx-y-4rMjogbvOEvcmAq-VewxWSaHCFKPhUZJkR4go8rCl9eTwg__",
+  },
+  {
+    id: uuidv4(),
+    title: "BeavsAI",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706089849462-Screen%20Shot%202024-01-24%20at%201.50.27%20AM.png?Expires=1708681851&Key-Pair-Id=K2QFIALPUONXG1&Signature=i2cCTH5-xe2WFZ6KGrwc6IFEqZUracUzbS77J4fGtxR615p7jWN3apvDCvboDWCutAwQuTs3Z9saMd~d7q-5u~pDg44VWwiwzy-szf~TmbYL1AHiV6qE-4nlk-9skZq4qSblHWzAf9-ZdpuRWw~w9IhKQ0IZY~k~o4bwXi9OZVP9qRDl8GiFfLu4DmQNMrkuGJRJy3YEg4fcETRetqZLq3nTwDIxTYpmEZQ3POnsbHFKNj-4uj7RsDbk62V-PYEiwnrTKue-6JLaCl2aOa~zRPs~IhZuFb3Cp46fk8v9JItvmLAetcXfdqb2oWEJzNtGZfU~ddKFwuDj8D0KxigxjA__",
+    link: "https://beavsai.onrender.com/",
+    github: "https://github.com/OSU-App-Club/beavsAI-frontend",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1705999762920-beavsai_vj6hyw.mov?Expires=1708591844&Key-Pair-Id=K2QFIALPUONXG1&Signature=kYfdCx16Xzl24sHW-WZmkfSrthAoLB9Ceb6OaNkx38V0tVx6I4FGPcgsh9QfZuA70JCTJcaSg884Q3rwXgH21QAOmgtw-rpUjzUA42~QLvudKBOBYrWbo9741H-UnsOtVA~WMu-vQ4IKUB7eakLEBjKhJZth-7x7HUenoHdm7bT23in9bTHfLe73tEOhoDUpvX5PSpQn1JTDmViSpTAa0WknxIfy1tYYTRlKm3FstCcHgs0O7w0kBUXtSN2irS8O-MOKkErHXHclgTzm7bRDJwSSyA6x9yzIPo5TFmnuDa0~seUUg0TnUhvnmCAIe4xmpqW3h5JQAW7A1RdnsNrluQ__",
+  },
+  {
+    id: uuidv4(),
+    title: "Nexus",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706000461391-nexus_hlfvdb.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=eOCSYHctOmcik8FvuObYqo9qCzzGwa74ixRtPt37TGG69DurnyXMkzs4K3rZvf99Po-i54gTM6OFuXnzJFVKI-xtuVNBoDgV9f-YF8VvCYlDp4X6WFuHbHE5D9PsdnZVdW-fiOeerjJdX68ZvzXjnTbKXzenYaNWUAKUg2AsanvhA45DFofnyGD9mrpzt40oYH0y4Qb6dcCsO0OtAiZo2TA1zBLDnukDiKxa0-d~Iq5hCv6uH0Gwgc4NOxtJJiDVHRBYuWb7T93znKAlWbuun3vM6pGB0BhkIPdWjerALI-xAOxYPN-kFX0eszfDcdAjsRh1jWwzx-eC02n0BHNvmQ__",
+    link: "https://devpost.com/software/nexus-27zakp",
+    github: "https://github.com/Sankalpsp21/Nexus",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706000836598-nexus_lauyqy.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=ycCscFI~jsA2wKjoyskrwP7-MVwEmlEGNFbcmCFPuieiQK6aCWalaz2KEzoZkjwn5tbwVbIClBoIGhQAQ4qoMwD~hk4Kvm3CySoAeyhADtlioqgcZz~4m5~kOsoKZBYc7LmwiCTiGR~sXW-iiV0kHBV9Hb77J4r-DtIUY7OVm3KZ6zepdK1GSg4j9QQeiVINjHwOkcF20uqBfQkD7iA2N9FnOeVIjnAZ2jbyiCwPp4LWPZldfV98ZY2DZSsg65kVS5XVOSUcaRdse~vAZMtTOVw2wYaFEEMICZsFYMOA8~qdNxDIdVCSLY9wANCq3u9b4ysKXyuB7fbm-4ZuAOCfKA__https://d3uraa353l50l1.cloudfront.net/video-1706000836598-nexus_lauyqy.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=ycCscFI~jsA2wKjoyskrwP7-MVwEmlEGNFbcmCFPuieiQK6aCWalaz2KEzoZkjwn5tbwVbIClBoIGhQAQ4qoMwD~hk4Kvm3CySoAeyhADtlioqgcZz~4m5~kOsoKZBYc7LmwiCTiGR~sXW-iiV0kHBV9Hb77J4r-DtIUY7OVm3KZ6zepdK1GSg4j9QQeiVINjHwOkcF20uqBfQkD7iA2N9FnOeVIjnAZ2jbyiCwPp4LWPZldfV98ZY2DZSsg65kVS5XVOSUcaRdse~vAZMtTOVw2wYaFEEMICZsFYMOA8~qdNxDIdVCSLY9wANCq3u9b4ysKXyuB7fbm-4ZuAOCfKA__",
+  },
+  {
+    id: uuidv4(),
+    title: "OSU's ACM Website",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706001733500-acm_site.png?Expires=1708593749&Key-Pair-Id=K2QFIALPUONXG1&Signature=IsJa-WBYBKY4l61ujWcb8OAoPNxuKhIkKjdst108625Yp00~-c~-cfFZlb9G4dwX57L0iugW1vI58nqD-ZVpGZkc~AbknUwPFP63ZTYHbKq5Ivpkq9xaE1Z4H7d-wJbeojZtGSOTcpT~1geIx72lHXR~iNb~K-aZL052k73xGfNtZPBk4iTmO2Plp-Q-OQl-lgqv~E0Qv4UkSd8TfbOV~TPZXNq0AuJ4y2y-CWfQm2AZRPMYEy54fM25km9Wen4Lapw~svcyCM08ISJGKuK8ikEKeG0uFEDmpRy3HqSp~X4NNIGWgz1fyJlxMqZiS8ybb-j1jJDgp3-CK9XDyH63Dg__",
+    link: "https://acm.oregonstate.edu/",
+    github: "https://github.com/osu-acm/website",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706001739745-acm_njg7ja.mov?Expires=1708593792&Key-Pair-Id=K2QFIALPUONXG1&Signature=vJbCdVJJvNw9UAY2p~3vZJybNwgGgwH6yKNAxbM6OOZEjYjOx50OHQL1o065C~lfGwTDMFzGN~a1Rblp629KF8En3~UJfceV8FRpoan-Lyv~BNSJT0FJik69RfndafoSVOy2IQ6yo-LIO6IpQd2l~RRpX7wOk0UEgUGwO-DmwOjRqJnS~NtdXrBWDSt6Ywt-mPXUquvYuH4AqHtt9rqG-fCn1tB2QAXopHl8WBawj63HQk8VR3QuO3Id2wV36mTV5afJzBg29EryHshXcrIOFEhTf1hp8oek~k3yCknFynBZNhY8fV-PC6tOc6QEX0e5Bf6AbhBm88oo6~Nu6qss0g__",
+  },
+  {
+    id: uuidv4(),
+    title: "ISpyAI",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706000473713-ispy_rykpja_dtjayr.webp?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=MtH--xO7MC3iNrQVgXRVURoyNB3ypIPg3hQdPFGpXjHiYj48Ob-lXYmgm03tdM6zCF5Ft6HQ4IpSD9SAekhLrY1nC-Pc~OD9Mnyxp~xV3YCxpyElMSPltPP-lmxi6EJox9VNZbd6iBIUg85HQOKVgQjlG12BmCNeKYgdooU7bF8b~UgzqUszU5ZOzbbjcK6170CSAnPa5kXjx8IKBtnArX~yqBNFFEUiBSMuyKmjGbYoEhnLVeyeUcVDislvSh32dMbikh534kxzhDikZLNKIXh4TMgfyx0VE5yR1cyQZ7ewPwjFm9BXOOvdVEBkarkCchaBxh2yL8DkymSlNannIw__",
+    link: "https://ispyai.onrender.com",
+    github: "https://github.com/Nyumat/ispyai",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706000879625-ispyai_sssn9i.mp4?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=BkAbngFUh3cWTZIFGcNMTbxm1TOuzRO~T1QDiH0khnn5FY9TcWimUuI6Ql54P2RSgyVRPr4TrGNyQWHUmqzBrkrYbfMSsakYQBJtwuMl1FTibsQK-cY7I49wY7eaNSYHojdXoU5m5ER60pX8nnTi62nOYQuB-t0yoWQJxUvdTMJwCmZ2n2CygVmWS5UtCeTuLh64b7H76puLOENYJEaHN4dX5j-zSD4qR6YQG8bXhjE-OR7FMWlXWPRxPGX~CMHzZD5A77MWCe5RtHDof~F3XtBQddBkTYzfWqGWCo9s56MlwFYjy1mcvzMZouAwtRdrFozxImlP2XKB0E64GeP0hw__",
+  },
+  {
+    id: uuidv4(),
+    title: "Band Photo Gallery",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706000514075-doesband_btqagl_glkkpp.webp?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=uLddpA1IF0-F4jUOERdbyVs85oRnSJXRoNTEeaGVdkya1tXHgGVIHQ6nxzozsPl4DpTdh35KSnXie9~qUSCVkw1Qv5MClQike~Rl~aM8xk-2PCk-Aw6IKkUjQOmJkjvMjDyTMyyr4p1Mix7w7Tv5H7UiXmxQSkckF-9CHuFElZXRzKHBV9BG0rgnOHcwaIXeImHaAZNFYOWUzQsCU-v-7V~QKqGZBj0lMdNtL2JVFm6W07bMyny5FP3l3SoKepEN9VMI3V8zNb5HBonIFO~EqfxMObJsr7qKVoND6JdAiZWemc9vlPi70JKPiU4FucjqdFSi6KqRQWaMmmycGR39LA__",
+    link: "https://nyumat-does-band.vercel.app",
+    github: "https://github.com/Nyumat/NyumatDoesBand",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706000907264-doesband_wdxwbi.mov?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=uZSTRKn1fH-2XyX0BuzSl6oGDSOaIIT~Ub9A-VloDFNbECiB1oDNt6096bAiA7SaVz~~1-cB3o6L4stb5eFQCi27H1LJuT6PWPoP-iuBNjsq6kyBW0N1iyxZjX4WTAgPQHw2a8kgmJCDZZlfdy-2XedZv-EP6jwIZu~NkM4-POHkvbg3wJi-Aye7ddtgGyVFr7Ew3uYSYUE7Li6XrzBJLB1B0srz~VMc~RlOWADbPHjWYQJp~ZqtqFscm5Xc6O2lDUCtAS9gQO~5~gnZPAnr1KLJXcQhuXzoImuF7hHThosLtU26e3vCPOHHLDIQ~c~FsM9t4bo0o8ZWr8JCtfqFAA__",
+  },
+  {
+    id: uuidv4(),
+    title: "Syllabot",
+    image:
+      "https://d3uraa353l50l1.cloudfront.net/image-1706000541688-Screen_Shot_2023-12-25_at_7.17.56_PM_xztq2k.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=QpLEI9TFmUgWoqCUj6gGC5QFU1limO6Cop1GP0lQccuwwKOjYEvL5fYh69HMuuRED1p0JQRfRqCcmge2v65BNDFigWeDealJkFOPqF1saKKysydD7b7~HGPjGkKhVG0rTcImDzQgGBkB4T7Ais~RiBrdhl-uf7GQeohAffskZO6zOBgRZgZrlfKLpDiIOwfEQ5WhK65htwim8zQmbI7BfYZmfBkcIfRLpIRfMg6P0AjlkzapYQ3VWHntTggf3W05N49F5ciygnhohTHyhQ1yvqIVQjwEYDcCzv-GgbrKEXOFkI3PN9ilCw7mj6KqShV4efc1CDJ9YSK9~3xdx9p1Yg__",
+    link: "https://devpost.com/software/syllabot-1dxsil",
+    github: "https://github.com/Nyumat/Syllabot",
+    demoVideo:
+      "https://d3uraa353l50l1.cloudfront.net/video-1706001074998-syllabot_syifai.mp4?Expires=1708593170&Key-Pair-Id=K2QFIALPUONXG1&Signature=KwN3GSZA5H0Z4UK-VlntIy~p43Dw~CiJbUUrtpB0KD5msB8sxtBkDmzOnxlIt0j2dB9ksxQ9tdBtcFpKDk2D34QXyc8oRIiJOeP6lK-MjxJf25FZOlUZkzIRZvcaFC1uKy56AF2F8jtCj7MCy6X4jzrgUHSDKjPmre0qzfbxdb3OYi0Zm3GKtk-~vCAdZCfk~NC6iaETGUeJYlweb3hwouPpJL7m7nf1pYudJh3N3zhPVEQE4kbVZN3zQvpwbqTFWIs26vpUAXC4ahhb5pTR89qmhThzYRLdIBhsNRS5HPt0QomMUjSkPy1T7MV6vHDWOI8HGft5GcWEv~ncqzg-Mg__",
   },
 ];
 
