@@ -83,8 +83,8 @@ export const projects: Project[] = [
     id: uuidv4(),
     title: "NextJudge",
     image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1706000438901-Screen_Shot_2023-12-23_at_5.33.27_PM_wd94hg.png?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=BU6hi2omY0K5pLQ3iCeWQScOfBCgrFqWe8iKmlhn3oQ~Ran00KYCWdKCr6LzUhH~KExbSUBPZkbJWAagiiAO-~0WFUHVBE5No1MTt2FriIEGOoIkG0QIUM1DZnBJQKbRnLpnfotvhTn9GQh1yyIExg83p3KjvOisDmTxg7lsqdBL~SKyLy0ObsouNTxL3d02I~D~v9h1z2S5yUCjXLb85eUiXdXkryL3qfT~yRV8GHuIW2A4pfK~pf~3bULEJv-UtJj9uuYWApxE-jJOZxGucvK~mT2RM3K0Csv34zdCUHZp~HJrtT7Mc10w2Ao1rHLVt~QS7ZREsvp4VrwgnSnj6Q__",
-    link: "https://github.com/NextJudge",
+      "https://d3uraa353l50l1.cloudfront.net/image-1707106832130-Screen%20Shot%202024-02-04%20at%206.46.20%20PM.png?Expires=1709698837&Key-Pair-Id=K2QFIALPUONXG1&Signature=qh350pWCGMj-tCU2cUGCxOldzftPTCpb0RjXcqfxV8Ic4ehfsXZ4wVyl6CoC9tVrQ7uVgkbQw4Q6QAtRhjwoJwiIqfuqXEttFw~dj0KSLKj8PhZjvDTQ7RrEXhwhMhjlUzpyWXw6jC7Ie-Fn0~vDV9I29UPzXBmGEO3h8J9Xam~8-y4bz8RRkFd2r6gPdJWiOssOp1a1Lx7WQxB6NkI-gZZ5vYYtyxug1cbhFO6fFaqYZ7g00kLC5OQpVIyhWCS-iMr0UNVRT0WmAfJpG5Ko1Pq1xrDQNaX1MoeKNsa1KjGIk~VmSW6UT7qmdEUd3aSUK-Ne57OijHPD~2QJUUSHRg__",
+    link: "https://nextjudge.vercel.app",
     github: "https://github.com/NextJudge/NextJudge",
     demoVideo:
       "https://d3uraa353l50l1.cloudfront.net/video-1706000392024-nextjudge_simocs.mov?Expires=1708592617&Key-Pair-Id=K2QFIALPUONXG1&Signature=c8ryNfIbr1AZhoBThtEb2mGVwv1-YKAW8RZbsarDDrero6vsinAstNvYnzpKziR3L3lArVq~8~Hcb5lMFx2eHFqSooBzeZ0HC1jW~8BaMj0aPwA1Fsgo-guMnVmHvKzFk90y-tOuGvzAyvS0wpvcpUf9QYXn8SGgKRpUUI6JAECkRaN2G1fpB4ZwowcLm494cCauRFzA5pIoQcoCOB-KbByrnwaVWGyFft3yNX6jaLMAJD7sHPoY8HbLc1RcgtHDIRKzOIrMaIcUKEb0PFybziA4FMjSDevpKi2sVfBac~xRY~dxKeHaCCvm4IhTd~6e3Ld1f12ImKDXUjw~CIUmhg__",
