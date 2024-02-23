@@ -23,30 +23,8 @@ function Main() {
       {/* <LazyLoad once> */}
       <Body>
         <div className="flex flex-col justify-center items-center w-full mt-64">
-          <Box text="I started coding in 2020..." />
-          <div className="tranform translate-y-24">
-            <div className="arrow bounce " />
-            <div className="arrow bounce " />
-            <div className="arrow bounce " />
-          </div>
-        </div>
-      </Body>
-
-      <Body>
-        <div className="flex flex-col justify-center items-center w-full mt-64">
-          <Box text="And have come a long way since." />
-          <div className="tranform translate-y-24">
-            <div className="arrow bounce " />
-            <div className="arrow bounce " />
-            <div className="arrow bounce " />
-          </div>
-        </div>
-      </Body>
-
-      <Body>
-        <div className="flex flex-col justify-center items-center w-full mt-64">
-          <Box text="For instance, centering a div..." />
-          <div className="tranform translate-y-24">
+          <Box text="I build experiences for the web." />
+          <div className="tranform translate-y-40">
             <div className="arrow bounce " />
             <div className="arrow bounce " />
             <div className="arrow bounce " />
