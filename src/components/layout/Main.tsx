@@ -69,18 +69,18 @@ function Main() {
 
       <Body>
         <div className="mt-32">
-          <Box text="However, I will say..." />
+          <Box text="I will say though..." />
           <CompSci />
 
-          <Box text="The memories are countless." />
+          <Box text="The memories are the best part." />
         </div>
       </Body>
 
       <Body>
         <div className="mt-64 mb-64">
-          <Box text="Although..when coding gets tough..." />
+          <Box text="When coding gets tough..." />
           <Music />
-          <Box text="Music is always there to help me through." />
+          <Box text="You'll probably find me marching." />
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="arrow bounce " />
@@ -96,9 +96,8 @@ function Main() {
 
       <Body>
         <div className="mt-32">
-          <Box text="Thank you for stopping by!" />
           <br></br>
-          <Box text="Feel free to reach out on any of my socials!" />
+          <Box text="I don't use social media much anymore, but you'll find me on these." />
           <Socials socials={socials} />
         </div>
         <Footer />

@@ -129,7 +129,7 @@ export const projects: Project[] = [
     id: uuidv4(),
     title: "NextJudge",
     image:
-      "https://d3uraa353l50l1.cloudfront.net/image-1707106832130-Screen%20Shot%202024-02-04%20at%206.46.20%20PM.png?Expires=1709698837&Key-Pair-Id=K2QFIALPUONXG1&Signature=qh350pWCGMj-tCU2cUGCxOldzftPTCpb0RjXcqfxV8Ic4ehfsXZ4wVyl6CoC9tVrQ7uVgkbQw4Q6QAtRhjwoJwiIqfuqXEttFw~dj0KSLKj8PhZjvDTQ7RrEXhwhMhjlUzpyWXw6jC7Ie-Fn0~vDV9I29UPzXBmGEO3h8J9Xam~8-y4bz8RRkFd2r6gPdJWiOssOp1a1Lx7WQxB6NkI-gZZ5vYYtyxug1cbhFO6fFaqYZ7g00kLC5OQpVIyhWCS-iMr0UNVRT0WmAfJpG5Ko1Pq1xrDQNaX1MoeKNsa1KjGIk~VmSW6UT7qmdEUd3aSUK-Ne57OijHPD~2QJUUSHRg__",
+      "https://d3uraa353l50l1.cloudfront.net/image-1710059853214-Screen%20Shot%202024-03-10%20at%2012.36.06%20AM.png?Expires=1867848179&Key-Pair-Id=K2QFIALPUONXG1&Signature=mP1WiM0p9vZUvcmKtQCw2FOEeJElZjL~Tb9IHI9gsy35jn21sBfvoIVSBgT7t3WXWaRnYWuwf2sVEaWBkFi4ORHzosAND2StroAmNgJ2lFFF2XUD2y3HSiWNYt93Mrnb0kHqo0wtq3PK~yWxzwrmTmB-zLPKGfzqJLl51COq256Kc6jLeIol0UxZ1FEJ4KMJ8-lLCsz1nAXYThm~dCLJBoXOwN7GsWSVyS4EVeCPwxixS-~ONf0U6pAzpLeh4YOga3L-PLExYRtOMST0x4IrsRwugVWm4rzchwkUKgY2SwlI4ljKhkZmoHuir3xgA3mlHiNlz4iKRC9LJfPj-V7D7Q__",
     link: "https://nextjudge.vercel.app",
     github: "https://github.com/NextJudge/NextJudge",
     demoVideo:
@@ -216,7 +216,7 @@ export const projects: Project[] = [
   },
   {
     id: uuidv4(),
-    title: "OSU's ACM Website",
+    title: "ACM@OSU Website",
     image:
       "https://d3uraa353l50l1.cloudfront.net/image-1706001733500-acm_site.png?Expires=1866407355&Key-Pair-Id=K2QFIALPUONXG1&Signature=DMxCEOaKmPJCSh-T-2iZaKIAp~0STux60hcrP0ZOViR~Y4nsjmrvyHUq0FtIlXwABsD3j3mPrAjckOmYOTdVNUsuJ9Xko1ftDE6dCfO70Y7jzApHc2zbQ5PE3P-duHWCSzegbBCBqoPVEvO9eX94fuZ6rPm3PztiFIxlkO3pInwY8drrJM2jgZIHMJKaErFUptxg3GLrz~lWakST0G0j4Zk1pRCEXTskL5to5vrXKR16ezSdVHD227y~7gSEAtL-n8MGa8i3MTOtVJwDxP4NPkzmrTaHNMx2WLOO8PY6DPhBO274n3ezvKXfIe3RccUuyGEGdM9ts1ENuMJrzgh--A__",
     link: "https://acm.oregonstate.edu/",
@@ -440,7 +440,7 @@ export const csMemories: Image[] = [
   {
     id: uuidv4(),
     image:
-      "https://cdn.discordapp.com/attachments/1163717135596539914/1189112828041375774/IMG_3895.png?ex=65e6ce9e&is=65d4599e&hm=4937a32b4063208fdae280bfc826b2b1d6b482badc8490dc7d5afcfe70fab746&",
+      "https://d3uraa353l50l1.cloudfront.net/image-1710060176507-IMG_3895.jpeg?Expires=1867848179&Key-Pair-Id=K2QFIALPUONXG1&Signature=kMF3l39jnhQo4QvPEJusdJNkZgRO9Ab3bCcI6K6tsTP0BI-DHGu6GDZnwMCwadxSuPTa0IVFEzDjl1EgYtYyvZSC3uNbnmVbPHG5ts2pbV-jDgagtFKlWiMRlRZViSlD5F17cEgmyHy0~~YxzUAFI8X6Znlvl5W0G1XJbwGYphpE~GoVOuDCFwXb3d5aDVbjWgGCaXc02G4HG051eytkhzQJP~E2AQxLvjLdA8wjuSLBknykHV6YO-GIuCc2CUaMB7Oi4MUAaMjF4Gte79eSi15lX4gaKgEW0v2~ifoOYFn-DyQGogBncpu7unB1iJv0JWgNxrS661iVvQ4xlvrVOQ__",
   },
   {
     id: uuidv4(),
