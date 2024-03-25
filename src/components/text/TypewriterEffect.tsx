@@ -9,7 +9,7 @@ function TypewriterComponent() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     typewriter = new Typewriter(elementRef.current, {
       strings: [
-        "I build <strong>web apps.</strong>",
+        "I build <strong>applications.</strong>",
         "I am a <strong>student.</strong>",
         "<strong>Musician.</strong>",
         "<strong>Person of color.</strong>",

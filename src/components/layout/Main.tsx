@@ -23,8 +23,8 @@ function Main() {
       {/* <LazyLoad once> */}
       <Body>
         <div className="flex flex-col justify-center items-center w-full mt-64">
-          <Box text="I build experiences for the web." />
-          <div className="tranform translate-y-40">
+          <Box text="I build experiences for users." />
+          <div className="transform translate-y-40">
             <div className="arrow bounce " />
             <div className="arrow bounce " />
             <div className="arrow bounce " />
