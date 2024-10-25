@@ -56,7 +56,7 @@ const home = {
   headline: <>software engineer and builder</>,
   subline: (
     <>
-      welcome to my corner of the internet. formerly an overcomplicated mess of
+      welcome to my new corner of the net. formerly an overcomplicated mess of
       react, now just a chill gallery of projects, blogs, and photos. take a
       look around, and feel free to reach out if you have any questions or just
       want to chat. ✌🏿

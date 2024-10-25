@@ -28,8 +28,8 @@ export const Footer = () => {
                     <Text paddingX="4">
                         {person.lastName}
                     </Text>
-                    <Text>
-                        / adapted from <SmartLink style={{marginLeft: '-0.125rem'}} href="https://once-ui.com">Once UI</SmartLink>
+                    <Text hidden>
+                        / built w/ <SmartLink style={{marginLeft: '-0.125rem'}} href="https://once-ui.com">Once UI</SmartLink>
                     </Text>
                 </Text>
                 <Flex

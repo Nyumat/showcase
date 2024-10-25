@@ -15,10 +15,10 @@ import { useTranslations } from "next-intl";
 
 type TimeDisplayProps = {
     timeZone: string;
-    locale?: string;  // optionally allow locale, defaulting to 'en-GB'
+    locale?: string;  // optionally allow locale, defaulting to 'en-US'
 };
 
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
+const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-US' }) => {
     const [currentTime, setCurrentTime] = useState('');
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' })
                 hour: '2-digit',
                 minute: '2-digit',
                 second: '2-digit',
-                hour12: false,
+                hour12: true,
             };
             const timeString = new Intl.DateTimeFormat(locale, options).format(now);
             setCurrentTime(timeString);
@@ -156,7 +156,7 @@ export const Header = () => {
                         ))}
                     </Flex>
                 }
-                <Flex hide="s">
+                <Flex hide="s" marginLeft="4">
                     { display.time && (
                         <TimeDisplay timeZone={person.location}/>
                     )}
