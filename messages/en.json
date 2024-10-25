@@ -1,0 +1,78 @@
+{
+    "person": {
+        "role": "hates javascript"
+    },
+    "newsletter": {
+        "title": "subscribe to {firstName}'s newsletter",
+        "description": "i occasionally write about software engineering, product development, and share insights from my experiences in the tech industry.",
+        "button": "sign up"
+    },
+    "home": {
+        "label": "home",
+        "title": "{name}'s personal website",
+        "description": "formerly, an overcomplicated mess of react. now, a chill gallery for my projects, blogs, and photos.",
+        "headline": "software engineer and builder",
+        "subline": "welcome to my corner of the internet. formerly an overcomplicated mess of react, now just a chill gallery of projects, blogs, and photos. take a look around, and feel free to reach out if you have any questions or just want to chat. ✌🏿"
+    },
+    "about": {
+        "label": "about",
+        "title": "about me",
+        "description": "meet {name}, {role} from {location}",
+        "intro": {
+            "title": "introduction",
+            "description": "hey, i’m nyuma! i write code, make music, and occasionally combine the two to something cool. you might’ve seen my work at notion, or maybe caught me winning a hackathon or two. currently, i'm changing the way people with sickle cell disease manage their health. welcome to my little corner of the 'net."
+        },
+        "work": {
+            "title": "what i've been up to",
+            "experiences": {
+                "app_development_club": {
+                    "timeframe": "oregon state university",
+                    "role": "president",
+                    "achievements": "led a team of over 200+ student developers in building web and mobile apps.;hosted a $2000 hackathon with 75+ participants, partnering with purs digital and oregon state university, challenging students to build an nfc-based mobile application in just 48 hours.;launched 5 apps, including an ai-platform that understands your course schedule, a peer-to-peer study group and tutoring platform for osu students, and a new club website."
+                },
+                "notion": {
+                    "timeframe": "2024",
+                    "role": "engineering intern",
+                    "achievements": "launched the notion device manager to over 10 million users, enabling log-in alerts, session management, and device tracking.;featured in the notion blog for innovative use of notion to manage the club's engineering, logistics, and community.;sparked a partnership between notion and colorstack, establishing a pipeline for underrepresented students to intern at notion."
+                }
+            }
+        },
+        "studies": {
+            "title": "studies",
+            "institutions": {
+                "oregon_state_university": {
+                    "description": "studied computer science with a focus on web and mobile development."
+                }
+            }
+        },
+        "technical": {
+            "title": "technical skills",
+            "skills": {
+                "nextjs": {
+                    "description": "building modern web apps that not only delight, but also perform well."
+                },
+                "ai_development": {
+                    "description": "developing ai applications integrating machine learning models, tokenization, and natural language processing into web applications."
+                }
+            }
+        }
+    },
+    "blog": {
+        "label": "yapping",
+        "title": "writing about everything i care about",
+        "description": "read what {name} has been up to recently"
+    },
+    "work": {
+        "label": "stuff i've built",
+        "title": "nyuma's projects",
+        "description": "a collection of projects i've done through the years by {name}"
+    },
+    "gallery": {
+        "label": "photos",
+        "title": "pictures and vibes",
+        "description": "a photo collection by {name}"
+    },
+    "projectCard": {
+        "label": "learn more"
+    }
+}

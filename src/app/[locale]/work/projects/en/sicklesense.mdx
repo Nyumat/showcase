@@ -1,0 +1,109 @@
+---
+title: "Revolutionizing the way we manage Sickle Cell Disease with AI"
+publishedAt: "2024-04-08"
+summary: "For the first ever AfroTech AI Hackathon, I developed SickleSense, a platform which integrates real-time health data with AI insights to help individuals living with Sickle Cell Disease."
+images:
+  - "/images/projects/sicklesense/sicklesense.png"
+  - "/images/projects/sicklesense/dashboard.png"
+  - "/images/projects/sicklesense/metrics.png"
+team:
+  - name: "Tom Nyuma"
+    role: "Engineer"
+    avatar: "/images/avatar.webp"
+    github: "https://github.com/nyumat"
+---
+
+## Overview
+
+This project was created for a month long hackathon hosted by [AfroTech](https://afrotech.com/) and [Blavity](https://blavity.com/). The goal was to develop a solution that leverages AI to address a pressing issue in the Black community. 
+
+I decided to focus on Sickle Cell Disease, a condition that affects millions of people worldwide, including me.
+
+I ended up winning [2nd place and $5000](https://devpost.com/software/sicklesense) for this project, so I'm pretty proud of it!
+
+## Inspiration
+
+A lot of people don't expect this, but managing Sickle Cell disease involves more than just the physical symptoms.
+
+Patients often feel misunderstood by healthcare providers and lack a supportive community. Living with SCD myself, I’ve experienced these challenges firsthand.
+
+This inspired me to build SickleSense, using both qualitative and quantitative data to help patients manage their condition more effectively, empowering them to live better lives.
+
+## Key Features
+
+### AI-Powered Health Plans
+
+- Users can create and customize health plans based on their real-time health data.
+- AI-generated recommendations suggest lifestyle changes, medication adjustments, and more.
+- Health plans can be updated, paused, or deleted as needed.
+
+### Comprehensive Health Logging
+
+- Users can log medications, symptoms, and appointments with reminders via email or SMS.
+- In-app notes enable users to document health trends, which improves communication during medical consultations.
+- Building a comprehensive health history enables more accurate AI insights and personal care improvements.
+
+### Wearable Device Integration
+
+- SickleSense integrates with Fitbit to monitor heart rate, oxygen levels, and activity in real-time.
+- Data from Fitbit is used to power AI predictions, helping users stay ahead of potential health crises with timely recommendations.
+
+### AI-Powered Chatbot
+
+- The AI chatbot provides context-aware health advice based on a user’s personal data.
+- Using Retrieval Augmented Generation (RAG) and a database of 54,000 SCD-related documents, the chatbot offers accurate responses and health insights.
+
+### Community Forum
+
+- Users can share experiences, ask questions, and provide support to others in a dedicated community forum.
+- This fosters a sense of belonging, reducing isolation that many patients with chronic illnesses face.
+
+### Customizable Dashboard & Alerts
+
+- Users can customize their dashboard to focus on their most important health metrics.
+- Automated email and SMS reminders for medications, appointments, and health updates are available.
+- Real-time alerts notify users of potential crises based on their health data and Fitbit metrics.
+
+## Tech Stack
+
+- **Next.js**: I used this powerful front-end framework to build the user interface.
+- **OpenAI & Google Gemini**: I integrated these AI tools for health insights and recommendations.
+- **Fitbit API**: I utilized this API for real-time health data ingestion from wearable devices.
+- **PostgreSQL & Prisma**: I managed the database for user health data and logs using these technologies.
+- **Elasticsearch**: I implemented this to provide semantic search and AI-powered insights for the platform.
+- **Bun.js**: I used this backend service for real-time data ingestion.
+- **Render**: I deployed services efficiently using this cloud platform.
+- **Tailwind CSS & shadcn/ui**: I created a responsive and accessible user interface with these tools.
+
+## Challenges and Learnings
+
+One of the toughest challenges was ensuring data privacy and security while handling sensitive health information, even though this was a hackathon project.
+
+Additionally, integrating Fitbit’s real-time data API and syncing this data with AI-powered insights proved to be difficult, especially when making sure that data was processed securely and effectively.
+
+The final major challenge was designing an intuitive user interface that caters to individuals who may be in pain or fatigue. I had to play around with different color schemes, font sizes, and layouts to ensure that it was "just right".
+
+## What came out of it
+
+[Sickle Sense is live on the net, here](https://sicklesense.vercel.app/). Please note that the applicaton is not available for regular users, yet.
+
+If you want to see the entire thing in action, check out the video below:
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/QuSjV4VYsmk?si=37hWxdqMmMvkkoQJ"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
+
+## What’s Next?
+
+- **Mobile App Development**: Expanding the platform to include iOS and Android apps to provide a more accessible experience.
+- **Wearable Device Integration**: Adding support for other wearable devices like the Apple Watch and Oura Ring.
+- **Language Support**: Implementing i18n to reach a global community of individuals living with SCD.
+- **Partnerships**: Collaborating with healthcare providers, SCD organizations, and medical professionals to refine the platform and gather feedback.
+- **Expanded AI Capabilities**: Continuing to enhance the AI's ability to provide personalized, accurate health recommendations based on user data.
