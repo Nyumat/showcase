@@ -27,10 +27,7 @@ export async function generateMetadata({
   const t = await getTranslations();
   const { person, home } = renderContent(t);
 
-    return {
-        icons: [
-          
-      ],
+  return {
     metadataBase: new URL(`https://${baseURL}/${locale}`),
     title: home.title,
     description: home.description,
@@ -40,7 +37,7 @@ export async function generateMetadata({
       url: baseURL,
       siteName: `${person.lastName}'s personal website`,
       locale: "en_US",
-        type: "website",
+      type: "website",
     },
     robots: {
       index: true,
