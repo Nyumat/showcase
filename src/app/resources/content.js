@@ -52,14 +52,14 @@ const social = [
 const home = {
   label: "home",
   title: `nyuma's personal website`,
-  description: `formerly, an overcomplicated mess of react. now, a chill gallery for my projects, blogs, and photos.`,
+  description: `formerly, an overcomplicated mess of react. now, a chill gallery for my projects, blog, and photos.`,
   headline: <>software engineer and builder</>,
   subline: (
     <>
-      hey, i'm tom nyuma. ✌🏿 welcome to my <i>new</i> corner of the net. <br />
-      <br /> formerly an overcomplicated mess of react, now just a chill gallery
-      of projects, ramblings, and photos. take a look around, and feel free to
-      reach out if you have any questions or just want to chat.
+      hey, i'm tom nyuma. ✌🏿 welcome to my corner of the net. <br />
+      <br /> this site was formerly an overcomplicated mess of react, but now, a
+      chill gallery of projects, ramblings, and photos. take a look around, and
+      feel free to reach out if you have any questions or just want to chat.
     </>
   ),
 };
@@ -84,16 +84,9 @@ const about = {
     title: "introduction",
     description: (
       <>
-        hey, im nyuma! i write code, make music, and occasionally combine the
-        two to make something cool. you might’ve seen my work at some hackathon, or
-        maybe caught me chanting go beavs at a football game, regarless—welcome.
-        currently, i'm changing the way people with Sickle Cell Disease manage
-        their health.
-        <br />
-        <br />
-        <br />
-        <br />
-        welcome to my little corner of the 'net.
+        hey. i write code, make music, and occasionally combine the two to make
+        something cool. you might’ve seen me at some hackathon, or maybe in the
+        band chanting go beavs, regardless—welcome.
       </>
     ),
   },
