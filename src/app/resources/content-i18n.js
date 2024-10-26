@@ -102,7 +102,7 @@ const createI18nContent = (t) => {
       description: (
         <>
           {t("about.intro.description", {
-            fallback: `Hey, I’m Nyuma! I write code, make music, and occasionally combine the two to something cool. You might’ve seen my work at Notion, or maybe caught me winning a hackathon or two. Currently, I'm changing the way people with Sickle Cell Disease manage their health.\n\nWelcome to my little corner of the 'net.`,
+            fallback: `Hey, I’m Nyuma! I write code, make music, and occasionally combine the two to make something cool. You might’ve seen my work at Notion, or maybe caught me winning a hackathon or two. Currently, I'm changing the way people with Sickle Cell Disease manage their health.\n\nWelcome to my little corner of the 'net.`,
           })}
         </>
       ),

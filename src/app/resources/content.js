@@ -85,7 +85,7 @@ const about = {
     description: (
       <>
         hey, im nyuma! i write code, make music, and occasionally combine the
-        two to something cool. you might’ve seen my work at some hackathon, or
+        two to make something cool. you might’ve seen my work at some hackathon, or
         maybe caught me chanting go beavs at a football game, regarless—welcome.
         currently, i'm changing the way people with Sickle Cell Disease manage
         their health.

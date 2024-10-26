@@ -20,7 +20,7 @@
         "description": "meet {name}, {role} from {location}",
         "intro": {
             "title": "introduction",
-            "description": "hey, i’m nyuma! i write code, make music, and occasionally combine the two to something cool. you might’ve seen my work at notion, or maybe caught me winning a hackathon or two. currently, i'm changing the way people with sickle cell disease manage their health. welcome to my little corner of the 'net."
+            "description": "hey, i’m nyuma! i write code, make music, and occasionally combine the two to make something cool. you might’ve seen my work at notion, or maybe caught me winning a hackathon or two. currently, i'm changing the way people with sickle cell disease manage their health. welcome to my little corner of the 'net."
         },
         "work": {
             "title": "what i've been up to",
