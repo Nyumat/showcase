@@ -75,6 +75,7 @@ export const Header = () => {
             as="header"
             zIndex={9}
             fillWidth padding="8"
+            gap="12"
             justifyContent="center">
             <Flex
                 hide="s"
@@ -83,7 +84,7 @@ export const Header = () => {
                 textVariant="body-default-s">
                 
                 <a href={`https://github.com/nyumat/showcase`} target="_blank" rel="noopener noreferrer">
-                    the code. 
+                    code 4 da nerds. 
                 </a>
             </Flex>
             <Flex
@@ -156,7 +157,7 @@ export const Header = () => {
                         ))}
                     </Flex>
                 }
-                <Flex hide="s" marginLeft="4">
+                <Flex hide="s" textSize="xs" paddingLeft="4">
                     { display.time && (
                         <TimeDisplay timeZone={person.location}/>
                     )}

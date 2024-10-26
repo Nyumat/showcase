@@ -1,5 +1,5 @@
 import { getPosts } from '@/app/utils';
-import { Flex } from '@/once-ui/components';
+import { Flex, Heading, Text } from '@/once-ui/components';
 
 import { ProjectCard } from '@/components';
 
@@ -23,6 +23,9 @@ export function Projects({ range, locale }: ProjectsProps) {
         <Flex
             fillWidth gap="l" marginBottom="40" paddingX="l"
             direction="column">
+            <Heading variant="heading-strong-l" align="center" as="h1" size="xl">
+                recent work 
+            </Heading>
             {displayedProjects.map((post) => (
                 <ProjectCard
                     key={post.slug}
