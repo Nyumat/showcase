@@ -56,10 +56,10 @@ const home = {
   headline: <>software engineer and builder</>,
   subline: (
     <>
-      welcome to my new corner of the net. formerly an overcomplicated mess of
-      react, now just a chill gallery of projects, blogs, and photos. take a
-      look around, and feel free to reach out if you have any questions or just
-      want to chat. ✌🏿
+      hey, i'm tom nyuma. ✌🏿 welcome to my <i>new</i> corner of the net. <br />
+      <br /> formerly an overcomplicated mess of react, now just a chill gallery
+      of projects, ramblings, and photos. take a look around, and feel free to
+      reach out if you have any questions or just want to chat.
     </>
   ),
 };
@@ -84,15 +84,16 @@ const about = {
     title: "introduction",
     description: (
       <>
-        Hey, I’m Nyuma! I write code, make music, and occasionally combine the
-        two to something cool. You might’ve seen my work at Notion, or maybe
-        caught me winning a hackathon or two. Currently, I'm changing the way
-        people with Sickle Cell Disease manage their health.
+        hey, im nyuma! i write code, make music, and occasionally combine the
+        two to something cool. you might’ve seen my work at some hackathon, or
+        maybe caught me chanting go beavs at a football game, regarless—welcome.
+        currently, i'm changing the way people with Sickle Cell Disease manage
+        their health.
         <br />
         <br />
         <br />
         <br />
-        Welcome to my little corner of the 'net.
+        welcome to my little corner of the 'net.
       </>
     ),
   },
