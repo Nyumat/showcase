@@ -88,7 +88,7 @@ export default function Home({
           }),
         }}
       />
-      <SparkleFx speed="slow" count={100} trigger>
+      <SparkleFx speed="slow" count={50}>
         <Flex fillWidth direction="column" paddingY="l" gap="m">
           <Flex direction="column" fillWidth maxWidth="s" gap="m">
             <RevealFx translateY="4">
